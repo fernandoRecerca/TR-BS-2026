@@ -1,0 +1,98 @@
+\documentclass[a4paper,12pt]{book} 
+
+\usepackage{url}
+\usepackage{hyperref}
+
+% We're working with A4, which is 21cm by 29.7
+\setlength{\paperwidth}{210mm}
+\setlength{\paperheight}{297mm}
+%\setlength{\hoffset}{-15mm}
+\setlength{\voffset}{-25mm}
+\setlength{\textheight}{242mm}
+\setlength{\topmargin}{10mm}
+\setlength{\headheight}{10mm}
+\setlength{\headsep}{10mm}
+\setlength{\footskip}{1.2cm} %def=30pt=1.054cm
+
+\setlength{\textwidth}{155mm}
+\setlength{\oddsidemargin}{5mm}
+\setlength{\evensidemargin}{-5mm}
+
+% Espai entre línies de 1.5
+\renewcommand{\baselinestretch}{1.5}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\pagenumbering{arabic}
+\setlength{\parindent}{0truecm}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\renewcommand{\headrulewidth}{0pt}
+
+
+
+\makeindex
+
+\usepackage{titlesec}
+
+\titleformat{\chapter}[block]
+  {\normalfont\huge\bfseries\center}{}{1em}{\Huge}
+\titlespacing*{\chapter}{-0.5cm}{-1.5cm}{0.5cm}
+\renewcommand{\chaptername}{}
+
+\begin{document}
+
+
+
+\input{./../cover/coverGuia}
+
+\frontmatter
+
+\cleardoublepage
+
+
+\cleardoublepage
+\setcounter{tocdepth}{2}
+\renewcommand\contentsname{Índex de continguts}
+\tableofcontents
+\label{i:tableofcontents}
+
+\mainmatter
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[RE,LO]{Prepara't per les MACs!}
+\fancyhead[LE,RO]{\leftmark}
+\fancyfoot[RE,LO]{Institut Sants}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{2pt}
+\renewcommand{\footrulewidth}{1pt}
+
+\chapter*{Introducció}
+
+Fer una petita introducció i citar~\cite{Temari-macs}. Explicar que hi hauran dos blocs i parlar en cadascun d'ells les diferències entre MAT i MACs.
+
+\input{./blocI/blocI}
+
+\input{./blocII/blocII}
+
+\appendix
+
+\input{./../license/fdl}
+
+\renewcommand\bibname{Bibliografia}
+\bibliographystyle{./../bibliografia/caplain}
+\bibliography{./../bibliografia/myBiblio}
+\addcontentsline{toc}{chapter}{Bibliografia}
+\label{b:bibliography}
+
+% \listoffigures
+% \listoftables
+
+
+
+
+\end{document} 

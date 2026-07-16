@@ -1,7 +1,7 @@
 #!/bin/bash
 logs="*.bak *.aux *.log *.bbl *.blg *.toc *.lot *.lof *.out *.idx *.ilg *.ind *.brf *.backup"
 swaps="*% *~ .*~ .*%"
-folders=". cover/ capitols/"
+folders=". cover/ capitols/ guiaMACs"
 
 case "$1" in
   all)
