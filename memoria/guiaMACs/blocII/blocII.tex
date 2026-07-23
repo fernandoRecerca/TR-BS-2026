@@ -1,5 +1,25 @@
 \chapter{Bloc II : Probabilitat i estadística}
 
 \section{Probabilitat}
+Distribució normal
+
+Què és la distribució normal?
+Imagina’t que mesures l’alçada de tots els alumnes del teu curs. La majoria estaran a prop de l’alçada mitjana (ni molt alts ni molt baixos), però a mesura que et vas allunyant més d’aquesta mitjana (molt alt o molt baix) menys gent trobes. Si dibuixes aquestes alçades en un gràfic surt una corba en forma de campana, coneguda com a campana de Gauss.
+Doncs la distribució normal és el model matemàtic d’aquesta campana.
+\usagepackage{graphicx}
+...
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{distribucio_normal.png}
+    \caption{Distribució normal amb mitjana $\mu$ i desviació típica $\sigma$}
+\end{figure}
+
+
+Definició i paràmetres
+La distribució normal s’expressa com: $X~N(\mu, \sigma)$, on $\mu$ és la mitjana i $\sigma$ la desviació típica (****posar link a la desviació típica quan l’expliqui més endavant). Visualment, $\mu$ marca el centre de la campana, mentre que $\sigma$ determina l'amplada: com més gran és $\sigma$, més ampla és la campana i com més petita és, més estreta.
+
+La versió estàndard per mirar les probabilitats és quan $Z~N(0,1)$, perquè les taules de probabilitat estan fetes per a aquesta distribució. Tot i que, a les PAU de Catalunya no és necessari utilitzar aquestes taules, ja que en l’enunciat et donen directament la probabilitat.
+
+En el cas que la variable no segueixi la distribució $N(0,1)$, es pot transformar en una distribució normal estàndard mitjançant la tipificació: $Z = \dfrac{X - \mu}{\sigma}$.
 
 \section{Inferència}
