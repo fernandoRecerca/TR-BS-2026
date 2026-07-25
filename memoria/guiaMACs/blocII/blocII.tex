@@ -76,7 +76,49 @@ En el cas que la variable no segueixi la distribució $N(0,1)$, es pot transform
 \end{table}
 
 Càlcul de probabilitats
-Enunciat: Si $Z \sim N(0,1)$, calcula la probabilitat de $P(Z<1,45)$
-Resolució: Si mires directament a la taula de $N(0,1)$
+Exercici 1:
+Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z<1,45)$.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./figures/Exercici_resolt_1.png}
+    \caption{Àrea corresponent a $P(Z<1,45)$ sota la corba normal estàndard.}
+\end{figure}
+Resolució:
+La taula de la $N(0,1)$ dona directament l'àrea acumulada a l'esquerra de $Z$ (la probabilitat que necessitem calcular). Només cal buscar la fila 1,4 i la columna 0,05 (per formar 1,45):
+$P(Z<1,45)=0.9265$
+No cal cap càlcul previ: la taula ja et dona la probabilitat acumulada fins a aquell valor.
+
+Exercici 2:
+Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z>0,8)$.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./figures/Exercici_resolt_2.png}
+    \caption{Àrea corresponent a $P(Z>0,8)$ sota la corba normal estàndard.}
+\end{figure}
+
+Resolució:
+La taula només dona probabilitats acumulades "menys que". Com que tota l'àrea sota la corba val 1:
+$P(Z>0,8)=1-P(Z<0,8)=1-0,7881=0,2119$
+Idea clau: sempre que et demanin ``més gran que'', passau a ``1 menys la probabilitat de la taula''
+
+Exercici 3:
+Enunciat: Si $Z \sim N(0,1)$, calcula $P(-1<Z<1,5)$.
+Resolució:
+Aquí et donen un interval, així que és la resta de dues àrees acumulades (és la àrea acumulada del número més gran, $1,5$, menys la àrea del petit, $-1$):
+$P(-1<Z<1,5)=P(Z<1,5)-P(Z<-1)$
+Per a $Z<-1$, fem servir la simetria de la normal:
+$P(Z<-1)=1-P(Z<1)=1−0,8413=0,1587$
+Llavors:
+$P(-1<Z<1,5)=P(Z<1,5)-P(Z<-1)=0,9332−0,1587=0,7745$
+Idea clau: amb valors negatius de z, sempre ``els gires'' fent servir $P(Z<-z)=1-P(Z<z)$.
+
+Exercici 4:
+Enunciat: Les notes d'un examen d'una classe segueixen $X \sim N(65, 12)$. Calcula $P(X<80)$.
+Resolució:
+Pas 1 - Tipificar. Com que $X$ no és $N(0, 1)$, no podem mirar la taula directament amb $80$. Cal passar-ho a una $Z$ estàndard:
+$Z=\frac{X - \mu}{\sigma}=\frac{80-65}{12}=1,25$
+Pas 2 - Reescriure la probabilitat en termes de $Z$ i mirar taula:
+$P(X<80)=P(Z<1,25)=0,8944$
+Resposta: aproximadament el $89,44\%$ dels estudiants treuen menys de 80 punts.
 
 \section{Inferència}
