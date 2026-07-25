@@ -83,6 +83,7 @@ Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z<1,45)$.
     \includegraphics[width=0.8\textwidth]{./figures/Exercici_resolt_1.png}
     \caption{Àrea corresponent a $P(Z<1,45)$ sota la corba normal estàndard.}
 \end{figure}
+
 Resolució:
 La taula de la $N(0,1)$ dona directament l'àrea acumulada a l'esquerra de $Z$ (la probabilitat que necessitem calcular). Només cal buscar la fila 1,4 i la columna 0,05 (per formar 1,45):
 $P(Z<1,45)=0.9265$
@@ -103,6 +104,12 @@ Idea clau: sempre que et demanin ``més gran que'', passau a ``1 menys la probab
 
 Exercici 3:
 Enunciat: Si $Z \sim N(0,1)$, calcula $P(-1<Z<1,5)$.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./figures/Exercici_resolt_3.png}
+    \caption{Àrea corresponent a $P(-1<Z<1,5)$ sota la corba normal estàndard.}
+\end{figure}
+
 Resolució:
 Aquí et donen un interval, així que és la resta de dues àrees acumulades (és la àrea acumulada del número més gran, $1,5$, menys la àrea del petit, $-1$):
 $P(-1<Z<1,5)=P(Z<1,5)-P(Z<-1)$
@@ -114,6 +121,12 @@ Idea clau: amb valors negatius de z, sempre ``els gires'' fent servir $P(Z<-z)=1
 
 Exercici 4:
 Enunciat: Les notes d'un examen d'una classe segueixen $X \sim N(65, 12)$. Calcula $P(X<80)$.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./figures/Exercici_resolt_4.png}
+    \caption{Àrea corresponent a $X \sim N(65, 12)$ sota la corba normal estàndard.}
+\end{figure}
+
 Resolució:
 Pas 1 - Tipificar. Com que $X$ no és $N(0, 1)$, no podem mirar la taula directament amb $80$. Cal passar-ho a una $Z$ estàndard:
 $Z=\frac{X - \mu}{\sigma}=\frac{80-65}{12}=1,25$
