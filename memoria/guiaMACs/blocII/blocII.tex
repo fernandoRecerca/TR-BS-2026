@@ -25,7 +25,7 @@ En el cas que la variable no segueixi la distribució $N(0,1)$, es pot transform
 
 \input{./blocII/taulaNormal.tex}
 
-Càlcul de probabilitats resolts
+\subsubsection{Exercicis resolts}
 Exercici 1:
 Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z<1,45)$.
 \begin{figure}[h]
@@ -101,8 +101,56 @@ Exercicis a resoldre:
 
 
 \subsection{Aproximació de la binomial per la normal}
+\subsubsection{Perquè aproximar-la}
+Quan $n$ és gran, calcular probabilitats amb la fórmula de la binomial es torna molt feixuc (combinatòries enormes). Per evitar fer càlculs enormes aproximem la binomial per una distribució normal, que és contínua i molt més fàcil de treballar amb taules.
 
-\subsubsection{Distribució normal}
+
+\subsubsection{Quan s'aplica}
+En el llibre de MACs II (****citar llibre biblio) a la pàgina 320 explica que:
+``(**posar en cursiva) Una distribució binomial s'assembla més a una de normal com més gran és el producte $np$ (o $nq$ si $q<p$).
+Quan $np$ i $nq$ sóm més grans que 3, l'aproximació és bastant bona. I si són més grans que 5, l'aproximació és gairebé perfecta. D'ara endavant considerarem el valor 3 com a referent per dona validesa a aquesta aproximació.
+Naturalment, la corba normal a la qual s'aproxima la $B(n, p)$ té la mateixa mitjana, $\mu = n \cdot p$, i la mateixa desviació típica, $\sigma = \sqrt{n \cdot p \cdot q}$:
+$B(n, p) \approx N(n \cdot p, \sqrt{n \cdot p \cdot q}$
+En l'aproximació d'ambdues distribucions cal tenir en compte que la binomial és discreta i la normal, contínua.''
+
+\subsubsection{La correcció de continuïtat}
+La binomial és discreta (només agafa valors enters), mentre que la normal és contínua (pot pendre qualsevol valor dins d'un interval, incloent-hi els tots els decimals possibles). Per passar d'una a l'altra, cal ``fer més gran'' cada valor enter k en un interval [k-0,5, k+0,5].
+Taula de conversió:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c}
+        \hline
+        Volem (binomial) & Ho calculem amb (normal) \\
+        \hline
+        $P(X=k)$ & $P(k-0,5<Y<k+0,5)$ \\
+        $P(X\leq k)$ & $P(Y<k+0,5)$ \\
+        $P(X<k)$ & $P(Y<k-0,5)$ \\
+        $P(X\geq k)$ & $P(Y>k-0,5)$ \\
+        $P(X>k)$ & $P(Y>k+0,5)$ \\
+        \hline
+    \end{tabular}
+    \caption{Correcció de continuïtat: pas de binomial a normal}
+    \label{tau-correccio-continuitat}
+\end{table}
+
+\subsubsection{Exercici resolt}
+Enunciat: En una fàbrica, el 8\% de les peces són defectuoses. S'agafa una mostra de 200 peces. Calcula la probabilitat que n'hi hagi com a màxim 20 de defectuoses.
+
+Resolució:
+Pas 1 - Identificar la binomial: $X \sim B(200;\ 0,08)$
+
+Pas 2 - Comprovar condicions: $np=16\geq3$, $nq=184\geq3$ \checkmark
+
+Pas 3 - Calcular els paràmetres: $\mu=16$, $\sigma=\sqrt{200 \cdot 0,08 \cdot 0,92}\approx 3,83$
+
+Pas 4 - Aplicar la correcció de continuïtat: com que volem $P(X\leq20)$, passem a $P(Y<20,5)$
+
+Pas 5 - Tipificar: $Z=\dfrac{20,5-16}{3,83}\approx 1,17$
+
+Pas 6 - Consultar la taula $N(0,1)$: $P(Z<1,17)\approx 0,8790$
+
+Resposta: la probabilitat que hi hagi com a màxim 20 peces defectuoses és aproximadament $87,90\%$.
+
 
 
 \section{Inferència}
