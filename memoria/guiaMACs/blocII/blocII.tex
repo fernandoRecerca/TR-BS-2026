@@ -84,7 +84,7 @@ Pas 2 - Reescriure la probabilitat en termes de $Z$ i mirar taula:
 $P(X<80)=P(Z<1,25)=0,8944$
 Resposta: aproximadament el $89,44\%$ dels estudiants treuen menys de 80 punts.
 
-Exercicis a resoldre:
+\subsubsection{Exercicis a resoldre distribució normal:}
     1) Si $Z \sim N(0, 1)$, calcula $P(Z<2,1)$.
     2) Si $Z \sim N(0, 1)$, calcula $P(Z>1,33)$.
     3) Si $Z \sim N(0, 1)$, calcula $P(Z<-0,55)$.
@@ -107,7 +107,7 @@ Quan $n$ és gran, calcular probabilitats amb la fórmula de la binomial es torn
 
 \subsubsection{Quan s'aplica}
 En el llibre de MACs II (****citar llibre biblio) a la pàgina 320 explica que:
-``(**posar en cursiva) Una distribució binomial s'assembla més a una de normal com més gran és el producte $np$ (o $nq$ si $q<p$).
+``(**posar en cursiva) Una distribució binomial s'assembla més a una de normal com més gran és el producte $np$ (o $nq$ si $q<p$)(***no està en el llibre: $q=1-p$).
 Quan $np$ i $nq$ sóm més grans que 3, l'aproximació és bastant bona. I si són més grans que 5, l'aproximació és gairebé perfecta. D'ara endavant considerarem el valor 3 com a referent per dona validesa a aquesta aproximació.
 Naturalment, la corba normal a la qual s'aproxima la $B(n, p)$ té la mateixa mitjana, $\mu = n \cdot p$, i la mateixa desviació típica, $\sigma = \sqrt{n \cdot p \cdot q}$:
 $B(n, p) \approx N(n \cdot p, \sqrt{n \cdot p \cdot q}$
@@ -151,6 +151,13 @@ Pas 6 - Consultar la taula $N(0,1)$: $P(Z<1,17)\approx 0,8790$
 
 Resposta: la probabilitat que hi hagi com a màxim 20 peces defectuoses és aproximadament $87,90\%$.
 
-
+\subsubsection{Exercicis a resoldre aproximació de la binomial per la normal:}
+    1) Si $X \sim B(150, 0,4)$, comprova que es pot aproximar per una normal i calcula els paràmetres $\mu$ i $\sigma$ de la normal corresponent.
+    2) Si $X \sim B(300, 0,25)$, calcula $P(X \leq 80)$ aproximant per la normal.
+    3) Si $X \sim B(100, 0,5)$, calcula $P(X > 55)$ aproximant per la normal.
+    4) Si $X \sim B(250, 0,6)$, calcula $P(X = 150)$ aproximant per la normal.
+    5) En un institut, el $65\%$ dels alumnes de batxillerat afirmen fer esport regularment. Si s'entrevisten $180$ alumnes a l'atzar, calcula la probabilitat que com a màxim $110$ facin esport regularment.
+    6) Una companyia telefònica sap que el $12\%$ de les trucades al servei d'atenció al client duren més de $10$ minuts. D'una mostra de $400$ trucades, calcula la probabilitat que entre $40$ i $55$ (ambdós inclosos) durin més de $10$ minuts.
+    7) Segons un estudi, el $30\%$ dels joves d'entre $16$ i $18$ anys practica algun esport federat. Es tria una mostra aleatòria de $120$ joves d'aquesta franja d'edat. Calculeu, de manera raonada, la probabilitat que com a mínim $30$ dels joves de la mostra practiquin algun esport federat.
 
 \section{Inferència}
