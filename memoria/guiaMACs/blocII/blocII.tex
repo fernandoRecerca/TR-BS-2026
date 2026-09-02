@@ -1,7 +1,7 @@
 \chapter{Bloc II : Probabilitat i estadística}
 
 \section{Probabilitat}
-
+\section{Estadística}
 \subsection{Distribució normal}
 
 \subsubsection{Què és la distribució normal?}
@@ -135,13 +135,18 @@ Taula de conversió:
 
 \subsubsection{Exercici resolt}
 Enunciat: En una fàbrica, el 8\% de les peces són defectuoses. S'agafa una mostra de 200 peces. Calcula la probabilitat que n'hi hagi com a màxim 20 de defectuoses.
+\clearpage
+Resolució:
+\begin{enumerate}
+ \item Identificar la binomial: $X \sim B(200;\ 0,08)$
+ \item Comprovar condicions: $np=16\geq3$, $nq=184\geq3$
+\end{enumerate}
 
-Resolució:\\
-Pas 1 - Identificar la binomial: $X \sim B(200;\ 0,08)$
+Pas 1 -
 
-Pas 2 - Comprovar condicions: $np=16\geq3$, $nq=184\geq3$ %\checkmark
+Pas 2 -  %\checkmark
 
-Pas 3 - Calcular els paràmetres: $\mu=16$, $\sigma=\sqrt{200 \cdot 0,08 \cdot 0,92}\approx 3,83$
+Pas 3 - Calcular els paràmetres: $$\mu=16$$ $$\sigma=\sqrt{200 \cdot 0,08 \cdot 0,92}\approx 3,83$$
 
 Pas 4 - Aplicar la correcció de continuïtat: com que volem $P(X\leq20)$, passem a $P(Y<20,5)$
 
