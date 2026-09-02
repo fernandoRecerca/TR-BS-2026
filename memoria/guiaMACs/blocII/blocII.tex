@@ -78,25 +78,29 @@ Enunciat: Les notes d'un examen d'una classe segueixen $X \sim N(65, 12)$. Calcu
 \end{figure}
 
 Resolució:
-Pas 1 - Tipificar. Com que $X$ no és $N(0, 1)$, no podem mirar la taula directament amb $80$. Cal passar-ho a una $Z$ estàndard:
-$Z=\frac{X - \mu}{\sigma}=\frac{80-65}{12}=1,25$
-Pas 2 - Reescriure la probabilitat en termes de $Z$ i mirar taula:
+\begin{enumerate}
+ \item  Tipificar. Com que $X$ no és $N(0, 1)$, no podem mirar la taula directament amb $80$. Cal passar-ho a una $Z$ estàndard: $$Z=\frac{X - \mu}{\sigma}=\frac{80-65}{12}=1,25$$
+ \item Reescriure la probabilitat en termes de $Z$ i mirar taula:
 $P(X<80)=P(Z<1,25)=0,8944$
+\end{enumerate}
+
 Resposta: aproximadament el $89,44\%$ dels estudiants treuen menys de 80 punts.
 
 \subsubsection{Exercicis a resoldre distribució normal:}
-    1) Si $Z \sim N(0, 1)$, calcula $P(Z<2,1)$.
-    2) Si $Z \sim N(0, 1)$, calcula $P(Z>1,33)$.
-    3) Si $Z \sim N(0, 1)$, calcula $P(Z<-0,55)$.
-    4) Si $Z \sim N(0, 1)$, calcula $P(-2<Z<0,5)$.
-    5) Si $Z \sim N(0, 1)$, troba $z$ tal que $P(Z<z)0,95$.
-    6) Si $X \sim N(40, 5)$, calcula $P(X<47)$.
-    7) Si $X \sim N(120, 20)$, calcula $P(X>100)$.
-    8) El temps de reacció d'un grup de conductors segueix $N(0,75, 0,12)$ segons. Quina probabilitat té un conductor que tingui un temps de reacció més gran de $0,9$ s?
-    9) Les puntuacions d'un test segueixen $N(100,15)$. Quina proporció de persones obté una puntuació entre $85$ i $115$?
-    10) Una variable $N(80,\sigma)$ compleix que $P(X<65)=0,05$. Calcula $\sigma$.
-    11) PAU Catalunya, Matemàtiques Aplicades a les Ciències Socials, convocatòria ordinària de 2025, exercici 3a.
+\begin{enumerate}
+ \item Si $Z \sim N(0, 1)$, calcula $P(Z<2,1)$.
+ \item Si $Z \sim N(0, 1)$, calcula $P(Z>1,33)$.
+ \item Si $Z \sim N(0, 1)$, calcula $P(Z<-0,55)$.
+ \item Si $Z \sim N(0, 1)$, calcula $P(-2<Z<0,5)$.
+ \item Si $Z \sim N(0, 1)$, troba $z$ tal que $P(Z<z)0,95$.
+ \item Si $X \sim N(40, 5)$, calcula $P(X<47)$.
+ \item Si $X \sim N(120, 20)$, calcula $P(X>100)$.
+ \item El temps de reacció d'un grup de conductors segueix $N(0,75, 0,12)$ segons. Quina probabilitat té un conductor que tingui un temps de reacció més gran de $0,9$ s?
+ \item Les puntuacions d'un test segueixen $N(100,15)$. Quina proporció de persones obté una puntuació entre $85$ i $115$?
+ \item Una variable $N(80,\sigma)$ compleix que $P(X<65)=0,05$. Calcula $\sigma$.
+ \item PAU Catalunya, Matemàtiques Aplicades a les Ciències Socials, convocatòria ordinària de 2025, exercici 3a.
     Enunciat: Fa uns anys una granja de vaques frisones dedicada a la producció de llet va fer un estudi sobre el pes de les seves vaques i va arribar a la conclusió que aquesta variable seguia una distribució normal amb una mitjana de 580 kg i una desviació típica de 25 kg. Calculeu, de manera raonada, la probabilitat que si agafem a l’atzar una vaca frisona d’aquesta granja, el seu pes estigui entre 531 i 629 kg.
+\end{enumerate}
 
 
 
@@ -137,41 +141,29 @@ Taula de conversió:
 Enunciat: En una fàbrica, el 8\% de les peces són defectuoses. S'agafa una mostra de 200 peces. Calcula la probabilitat que n'hi hagi com a màxim 20 de defectuoses.
 \clearpage
 Resolució:
-\begin{enumerate}
- \item Identificar la binomial: $X \sim B(200;\ 0,08)$
+\begin{enumerate} (1)
+ \item Definir paràmetres i identificar la binomial: $n=200; p=0,08; q=1-0,08=0,92$ $X \sim B(200;\ 0,08)$
  \item Comprovar condicions: $np=16\geq3$, $nq=184\geq3$
+ \item Calcular els paràmetres: $$\mu=16$$ $$\sigma=\sqrt{200 \cdot 0,08 \cdot 0,92}\approx 3,83$$
+ \item Aplicar la correcció de continuïtat: com que volem $P(X\leq20)$, passem a $P(Y<20,5)$
+ \item Tipificar: $Z=\frac{20,5-16}{3,83}\approx 1,17$
+ \item Consultar la taula $N(0,1)$: $P(Z<1,17)\approx 0,8790$
 \end{enumerate}
-
-Pas 1 -
-
-Pas 2 -  %\checkmark
-
-Pas 3 - Calcular els paràmetres: $$\mu=16$$ $$\sigma=\sqrt{200 \cdot 0,08 \cdot 0,92}\approx 3,83$$
-
-Pas 4 - Aplicar la correcció de continuïtat: com que volem $P(X\leq20)$, passem a $P(Y<20,5)$
-
-Pas 5 - Tipificar: $Z=\frac{20,5-16}{3,83}\approx 1,17$
-
-Pas 6 - Consultar la taula $N(0,1)$: $P(Z<1,17)\approx 0,8790$
 
 Resposta: la probabilitat que hi hagi com a màxim 20 peces defectuoses és aproximadament $87,90\%$.
 
 \subsubsection{Exercicis a resoldre aproximació de la binomial per la normal:}
-    1) Si $X \sim B(150, 0,4)$, comprova que es pot aproximar per una normal i calcula els paràmetres $\mu$ i $\sigma$ de la normal corresponent.
-    2) Si $X \sim B(300, 0,25)$, calcula $P(X \leq 80)$ aproximant per la normal.
-    3) Si $X \sim B(100, 0,5)$, calcula $P(X > 55)$ aproximant per la normal.
-    4) Si $X \sim B(250, 0,6)$, calcula $P(X = 150)$ aproximant per la normal.
-    5) En un institut, el $65\%$ dels alumnes de batxillerat afirmen fer esport regularment. Si s'entrevisten $180$ alumnes a l'atzar, calcula la probabilitat que com a màxim $110$ facin esport regularment.
-    6) En una companyia telefònica, s'ha observat que aproximadament un $12\%$ de les trucades al servei d'atenció al client duren més de $10$ minuts. D'una mostra de $400$ trucades, calcula la probabilitat que entre $40$ i $55$ (ambdós inclosos) durin més de $10$ minuts.
-    7) Segons un estudi, el $30\%$ dels joves d'entre $16$ i $18$ anys practica algun esport federat. Es tria una mostra aleatòria de $120$ joves d'aquesta franja d'edat. Calcula, de manera raonada, la probabilitat que com a mínim $30$ dels joves de la mostra practiquin algun esport federat.
+\begin{enumerate}
+ \item Si $X \sim B(150, 0,4)$, comprova que es pot aproximar per una normal i calcula els paràmetres $\mu$ i $\sigma$ de la normal corresponent.
+ \item Si $X \sim B(300, 0,25)$, calcula $P(X \leq 80)$ aproximant per la normal.
+ \item Si $X \sim B(100, 0,5)$, calcula $P(X > 55)$ aproximant per la normal.
+ \item Si $X \sim B(250, 0,6)$, calcula $P(X = 150)$ aproximant per la normal.
+ \item En un institut, el $65\%$ dels alumnes de batxillerat afirmen fer esport regularment. Si s'entrevisten $180$ alumnes a l'atzar, calcula la probabilitat que com a màxim $110$ facin esport regularment.
+ \item En una companyia telefònica, s'ha observat que aproximadament un $12\%$ de les trucades al servei d'atenció al client duren més de $10$ minuts. D'una mostra de $400$ trucades, calcula la probabilitat que entre $40$ i $55$ (ambdós inclosos) durin més de $10$ minuts.
+ \item Segons un estudi, el $30\%$ dels joves d'entre $16$ i $18$ anys practica algun esport federat. Es tria una mostra aleatòria de $120$ joves d'aquesta franja d'edat. Calcula, de manera raonada, la probabilitat que com a mínim $30$ dels joves de la mostra practiquin algun esport federat.
+\end{enumerate}
+
 
 
 \section{Inferència}
 \subsection{La introducció al mostreig estadístic}
-\begin{Large}
-El temari d'aquest tema és el tema 11 del llibre?
-Parlar solucionari
-Problema al fer el creardoc
-
-\end{Large}
-
