@@ -7,7 +7,7 @@
 Imagina’t que mesures l’alçada de tots els alumnes del teu curs. La majoria estaran a prop de l’alçada mitjana (ni molt alts ni molt baixos), però a mesura que et vas allunyant més d’aquesta mitjana (molt alt o molt baix) menys gent trobes. Si dibuixes aquestes alçades en un gràfic surt una corba en forma de campana, coneguda com a campana de Gauss.
 Doncs la distribució normal és el model matemàtic d’aquesta campana.
 
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.7\textwidth]{./figures/distribucio_normal.png}
     \caption{Distribució normal amb mitjana $\mu$ i desviació típica $\sigma$}
@@ -27,7 +27,7 @@ En el cas que la variable no segueixi la distribució $N(0,1)$, es pot transform
 \subsubsection{Exercicis resolts}
 Exercici 1:
 Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z<1,45)$.
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{./figures/Exercici_resolt_1.png}
     \caption{Àrea corresponent a $P(Z<1,45)$ sota la corba normal estàndard.}
@@ -40,7 +40,7 @@ No cal cap càlcul previ: la taula ja et dona la probabilitat acumulada fins a a
 
 Exercici 2:
 Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z>0,8)$.
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{./figures/Exercici_resolt_2.png}
     \caption{Àrea corresponent a $P(Z>0,8)$ sota la corba normal estàndard.}
@@ -53,7 +53,7 @@ Idea clau: sempre que et demanin ``més gran que'', passau a ``1 menys la probab
 
 Exercici 3:
 Enunciat: Si $Z \sim N(0,1)$, calcula $P(-1<Z<1,5)$.
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{./figures/Exercici_resolt_3.png}
     \caption{Àrea corresponent a $P(-1<Z<1,5)$ sota la corba normal estàndard.}
@@ -70,14 +70,14 @@ Idea clau: amb valors negatius de $z$, sempre ``els gires'' fent servir $P(Z<-z)
 
 Exercici 4:
 Enunciat: Les notes d'un examen d'una classe segueixen $X \sim N(65, 12)$. Calcula $P(X<80)$.
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.8\textwidth]{./figures/Exercici_resolt_4.png}
     \caption{Àrea corresponent a $X \sim N(65, 12)$ sota la corba normal estàndard.}
 \end{figure}
 
 Resolució:
-\begin{enumerate}
+\begin{enumerate}[(1)]
  \item  Tipificar. Com que $X$ no és $N(0, 1)$, no podem mirar la taula directament amb $80$. Cal passar-ho a una $Z$ estàndard: $$Z=\frac{X - \mu}{\sigma}=\frac{80-65}{12}=1,25$$
  \item Reescriure la probabilitat en termes de $Z$ i mirar taula:
 $P(X<80)=P(Z<1,25)=0,8944$
@@ -119,7 +119,7 @@ En l'aproximació d'ambdues distribucions cal tenir en compte que la binomial é
 \subsubsection{La correcció de continuïtat}
 La binomial és discreta (només agafa valors enters), mentre que la normal és contínua (pot pendre qualsevol valor dins d'un interval, incloent-hi els tots els decimals possibles). Per passar d'una a l'altra, cal ``fer més gran'' cada valor enter k en un interval [k-0,5, k+0,5].
 Taula de conversió:
-\begin{table}[h]
+\begin{table}[h!]
     \centering
     \begin{tabular}{c|c}
         \hline
@@ -166,5 +166,5 @@ Resposta: la probabilitat que hi hagi com a màxim 20 peces defectuoses és apro
 
 
 
-\section{Inferència o Estadística?}
+\section{Inferència}
 \subsection{La introducció al mostreig estadístic}
