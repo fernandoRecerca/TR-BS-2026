@@ -168,3 +168,139 @@ Resposta: la probabilitat que hi hagi com a màxim 20 peces defectuoses és apro
 
 \section{Inferència}
 \subsection{La introducció al mostreig estadístic}
+Cito el llibre de MACs de 2n~\cite{Llibre_MACS_II}:
+``La \textbf{població} o \textbf{l'univers} és el conjunt de tots els individus que són objecte del nostre estudi.
+
+\textbf{Una mostra} és un subconjunt extret de la població. El seu estudi serveix per inferir característiques de tota la població.
+
+
+\subsubsection{Mostreig}
+En substituir l'estudi de la població pel de la mostra, es cometen errors. Però hi comptem per endavant i poden controlar-se.
+
+Tanmateix, si la mostra està mal triada (no és \textbf{representativa}) es produeixen errors addicionals imprevistos i incontrolables (\textbf{biaixos}).
+
+L'elecció de la mostra s'anomena \textbf{mostreig}. Vegem a continuació com s'ha de realitzar el mostreig perquè ens proporcioni mostres representatives.
+
+\subsubsection{Mostreig aleatori}
+Una condició \emph{gairebé} indispensable perquè una mostra sigui representativa és que els seus elements s'hagin triat aleatòriament, a l'atzar. Si l'elecció és subjectiva, els prejudicis de qui fa l'elecció es projecten a la mostra triada, que reflectirà el que aquesta persona \emph{creu} que és la realitat.
+
+Per exemple, imagina que en un centre escolar volen saber el temps que dediquen a estudiar, de mitjana, els 1\,300 alumnes i per a això es decideix extreure una mostra de 100 d'ells.
+
+\begin{enumerate}[a)]
+ \item Si fos el director o una comissió de professors els que triessin els estudiants, procurant que hi hagués estudiants «bons», «mitjans», «fluixos»..., la mostra seria esbiaixada, ja que no reflectiria la realitat sinó el que el director o els professors creguessin veure de la realitat.
+
+ \item Si triessin els 100 primers alumnes que arriben al centre un cert dia, la mostra també estaria \emph{contaminada}, perquè és possible que el fet «d'arribar aviat al centre» tingui alguna cosa a veure amb el grau de responsabilitat d'aquests alumnes i, per tant, amb la seva dedicació a l'estudi.
+
+ \item Si els 100 individus de la mostra se seleccionen mitjançant sorteig (es trien a l'atzar), llavors sí que serà representativa. Aquest mostreig s'anomena \emph{aleatori}.
+\end{enumerate}
+
+\begin{quote}
+\textit{Es diu que un \textbf{mostreig} és \textbf{aleatori} quan els components de la mostra es trien a l'atzar, de manera que tots els individus de la població tenen, a priori, la mateixa probabilitat de ser triats.}
+\end{quote}
+
+En l'apartat següent veurem diferents tipus de mostrejos aleatoris.
+
+
+\subsubsection{Mostreig aleatori simple}
+És el tipus de mostreig aleatori més senzill i tots els altres hi estan basats. Per obtenir una mostra, es numeren els elements de la població i se seleccionen a l'atzar els $n$ elements que ha de contenir la mostra. Si els individus són, per exemple, els cargols que hi ha en una capsa, per obtenir la mostra n'hi ha prou amb prendre'n $n$ per simple extracció.
+
+\subsubsection{Mostreig aleatori sistemàtic}
+Es numeren els individus i, a partir d'un elegit a l'atzar, es prenen els següents mitjançant «salts» numèrics iguals. Per exemple, si el primer és el 5è i el «salt» és de 13, es triaran el 5è, el 18è, el 31è, el 44è...
+
+El «salt» s'anomena \textbf{coeficient d'elevació}, $h$, i s'obté mitjançant el quocient sencer entre el nombre d'individus de la població, $N$, i el nombre d'individus de la mostra, $n$:
+$$h=\frac{N}{n}.$$
+
+El primer element, anomenat \textbf{origen}, es tria a l'atzar entre els nombres $1, 2, 3\ldots, h$.
+
+Una vegada numerats els $N$ individus de la població i sabent que la mostra ha de ser de mida $n$, el procés que se segueix és el següent:
+
+\begin{itemize}
+ \item Es calcula el coeficient d'elevació, $h$, dividint $N$ entre $n$.
+ \item S'esbrina el primer element de la mostra, l'origen, $a_1$, que s'obté aleatòriament d'entre els $h$ primers.
+ \item S'obtenen la resta d'elements de la mostra: $a_2=a_1+h,\ a_3=a_2+h,\ a_4=a_3+h\ldots$
+\end{itemize}
+
+Aquesta forma de mostreig només és vàlida si el criteri pel qual s'han numerat els individus de la població no té res a veure amb la característica que es vol estudiar a partir de la mostra. En aquest cas és, òbviament, més còmode, ja que només cal triar per sorteig un individu.
+
+
+Exercici resolt:
+1. En un cetre escolar hi ha 1300 alumnes. Explica com es tria una mostra de 100 individus:
+\begin{enumerate}[a)]
+ \item Mitjançant mostreig aleatori simple.
+
+ \item Mitjançant mostreig aleatori sistemàtic.
+\end{enumerate}
+
+\begin{enumerate}[a)]
+ \item Es tria aleatòriament 100 nombres d'entre els 1300. La mostra estarà formada pels 100 alumnes a qui corresponguin aquests nombres.
+
+ \item coeficient d'elevació: $h = \frac{1300}{100} = 13$
+    -Es tria aleatòriament un nombre de l'1 al 13. Suposem que surt el 5.
+    -Els alumnes seleccionats per a la mostra són els que corresponen als nombres 5, 18, 31, 44, 57 ..., 1292.
+\end{enumerate}
+
+
+\subsubsection{Mostreig aleatori estratificat}
+Si la població pot dividir-se en estrats relacionats amb la variable que s'està estudiant (per exemple, per edats: menors de 18 anys; de 18 a 50; més de 50), de vegades, abans de triar la mostra, convé fixar per endavant el nombre d'individus de cada estrat.
+
+La determinació del nombre d'elements que ha de tenir cada estrat s'anomena \textbf{afixació de la mostra}.
+
+Quan aquests nombres són proporcionals a les mides dels estrats en la població, es diu que el mostreig és \textbf{estratificat amb repartiment proporcional}.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l|c|c|c|c}
+        \hline
+        ESTRATS & $F_1$ & $F_2$ & $F_3$ & TOTAL \\
+        \hline
+        NRE. D'INDIVIDUS DE LA POBLACIÓ & $N_1$ & $N_2$ & $N_3$ & $N$ \\
+        \hline
+        NRE. D'INDIVIDUS DE LA MOSTRA & $n_1$ & $n_2$ & $n_3$ & $n$ \\
+        \hline
+    \end{tabular}
+    \caption{Repartiment proporcional en el mostreig estratificat}
+    \label{tau-mostreig-estratificat}
+\end{table}
+
+$$\frac{n}{N}=\frac{n_1}{N_1}=\frac{n_2}{N_2}=\frac{n_3}{N_3}$$
+
+En cada estrat, els $n_i$ individus de la mostra es trien aleatòriament.
+
+El mostreig estratificat és el més utilitzat a la pràctica. Es fa servir quan se suposa que la pertinença a un estrat o un altre influeix en la variable que estem analitzant. Per exemple:
+
+\begin{itemize}
+ \item Es pot suposar que els alumnes de cursos superiors estudien més que els altres.
+ \item O que l'edat influeix en les opinions sobre aspectes sociològics.
+ \item O que la pertinença a una comunitat autònoma o una altra pot influir en la renda per càpita, en la taxa d'atur, en el preu de l'habitatge...
+\end{itemize}
+
+Exercici resolt:
+1. Els 1300 estudiants d'un centre es reparteixen així:
+\begin{enumerate}[·]
+ \item 426 de 1r
+ \item 359 de 2n
+ \item 267 de 3r
+ \item 133 de 4t
+ \item 115 de 5è
+\end{enumerate}
+
+Com es triarà una mostra de 100 estudiants mitjançant mostreig estratificat amb repartiment proporcional?
+
+
+
+Ha de complir-se que: $\frac{100}{1300} = \frac{n1}{426} = \frac{n2}{359} = \frac{n3}{267} = \frac{n4}{133} = \frac{n5}{115}$.
+
+Trobem $n1$: $\frac{100}{1300} = \frac{n1}{426}$. Llavors, $n1=\frac{100}{1300} \cdot 426 = 32,77$.
+
+Analògicament obtenim els altres:
+
+$n2 = 27,62; n3 = 20,54; n4 = 10,23; n5 = 8,85$
+
+La part sencera d'aquests nombres suma: $32 + 27 + 20 + 10 + 8 = 97$
+
+Ens falten 3 per arribar a 100. Augmentarem una unitat els tres quocients la part decimal dels quals sigui més gran: $n1$, $n2$ i $n5$. Per tant, els cent individus de la mostra s'obtenen triant aleatòriament els estudiants següents:
+
+33 de 1r, 28 de 2n, 20 de 3r, 10 de 4t i 9 de 5è
+
+Perquè haver recorregut al mostreig estratificat amb repartiment proporcional sigui raonable, la característica que s'analitza ha de dependre, en alguna mesura, del curs que està fent l'estudiant, per exemple, l'estatura o el temps setmanal d'estudi.
+
