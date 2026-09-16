@@ -109,12 +109,13 @@ Quan $n$ és gran, calcular probabilitats amb la fórmula de la binomial es torn
 
 
 \subsubsection{Quan s'aplica}
-En el llibre de MACs II (****citar llibre biblio) a la pàgina 320 explica que:
-``(**posar en cursiva) Una distribució binomial s'assembla més a una de normal com més gran és el producte $np$ (o $nq$ si $q<p$)(***no està en el llibre: $q=1-p$).
-Quan $np$ i $nq$ són més grans que 3, l'aproximació és bastant bona. I si són més grans que 5, l'aproximació és gairebé perfecta. D'ara endavant considerarem el valor 3 com a referent per dona validesa a aquesta aproximació.
+En el llibre de MACs II~\cite{Llibre_MACS_II} a la pàgina 320 explica que:
+\emph{Una distribució binomial s'assembla més a una de normal com més gran és el producte $np$ (o $nq$ si $q<p$)} ($q=1-p$).
+
+\emph{Quan $np$ i $nq$ són més grans que 3, l'aproximació és bastant bona. I si són més grans que 5, l'aproximació és gairebé perfecta. D'ara endavant considerarem el valor 3 com a referent per dona validesa a aquesta aproximació.
 Naturalment, la corba normal a la qual s'aproxima la $B(n, p)$ té la mateixa mitjana, $\mu = n \cdot p$, i la mateixa desviació típica, $\sigma = \sqrt{n \cdot p \cdot q}$:
 $B(n, p) \approx N(n \cdot p, \sqrt{n \cdot p \cdot q}$
-En l'aproximació d'ambdues distribucions cal tenir en compte que la binomial és discreta i la normal, contínua.''
+En l'aproximació d'ambdues distribucions cal tenir en compte que la binomial és discreta i la normal, contínua.}
 
 \subsubsection{La correcció de continuïtat}
 La binomial és discreta (només agafa valors enters), mentre que la normal és contínua (pot pendre qualsevol valor dins d'un interval, incloent-hi els tots els decimals possibles). Per passar d'una a l'altra, cal ``fer més gran'' cada valor enter k en un interval [k-0,5, k+0,5].
@@ -168,43 +169,27 @@ Resposta: la probabilitat que hi hagi com a màxim 20 peces defectuoses és apro
 
 \section{Inferència}
 \subsection{La introducció al mostreig estadístic}
-Cito el llibre de MACs de 2n~\cite{Llibre_MACS_II}:
-``La \textbf{població} o \textbf{l'univers} és el conjunt de tots els individus que són objecte del nostre estudi.
+La \textbf{població} o \textbf{l'univers} és el conjunt de tots els individus o elements que formen part del nostre estudi
 
-\textbf{Una mostra} és un subconjunt extret de la població. El seu estudi serveix per inferir característiques de tota la població.
-
+Una \textbf{mostra} és un subconjunt d'elements extrets d'una població més gran, que s'utilitza per estudiar les característiques d'aquesta població sense haver-la d'analitzar completament.
 
 \subsubsection{Mostreig}
-En substituir l'estudi de la població pel de la mostra, es cometen errors. Però hi comptem per endavant i poden controlar-se.
-
-Tanmateix, si la mostra està mal triada (no és \textbf{representativa}) es produeixen errors addicionals imprevistos i incontrolables (\textbf{biaixos}).
-
-L'elecció de la mostra s'anomena \textbf{mostreig}. Vegem a continuació com s'ha de realitzar el mostreig perquè ens proporcioni mostres representatives.
+Per a que la mostra sigui el més representativa possible a la població existeixen diferents tipus de \textbf{mostreigs}. A continuació veurem com fer el mostreig perquè ens doni mostres representatives.
 
 \subsubsection{Mostreig aleatori}
-Una condició \emph{gairebé} indispensable perquè una mostra sigui representativa és que els seus elements s'hagin triat aleatòriament, a l'atzar. Si l'elecció és subjectiva, els prejudicis de qui fa l'elecció es projecten a la mostra triada, que reflectirà el que aquesta persona \emph{creu} que és la realitat.
+Cito el llibre de MACs de 2n~\cite{Llibre_MACS_II}:
+``Una condició \emph{gairebé} indispensable perquè una mostra sigui representativa és que els seus elements s'hagin triat aleatòriament, a l'atzar. Si l'elecció és subjectiva, els prejudicis de qui fa l'elecció es projecten a la mostra triada, que reflectirà el que aquesta persona \emph{creu} que és la realitat.
 
-Per exemple, imagina que en un centre escolar volen saber el temps que dediquen a estudiar, de mitjana, els 1\,300 alumnes i per a això es decideix extreure una mostra de 100 d'ells.
-
-\begin{enumerate}[a)]
- \item Si fos el director o una comissió de professors els que triessin els estudiants, procurant que hi hagués estudiants «bons», «mitjans», «fluixos»..., la mostra seria esbiaixada, ja que no reflectiria la realitat sinó el que el director o els professors creguessin veure de la realitat.
-
- \item Si triessin els 100 primers alumnes que arriben al centre un cert dia, la mostra també estaria \emph{contaminada}, perquè és possible que el fet «d'arribar aviat al centre» tingui alguna cosa a veure amb el grau de responsabilitat d'aquests alumnes i, per tant, amb la seva dedicació a l'estudi.
-
- \item Si els 100 individus de la mostra se seleccionen mitjançant sorteig (es trien a l'atzar), llavors sí que serà representativa. Aquest mostreig s'anomena \emph{aleatori}.
-\end{enumerate}
-
-\begin{quote}
 \textit{Es diu que un \textbf{mostreig} és \textbf{aleatori} quan els components de la mostra es trien a l'atzar, de manera que tots els individus de la població tenen, a priori, la mateixa probabilitat de ser triats.}
 \end{quote}
 
-En l'apartat següent veurem diferents tipus de mostrejos aleatoris.
-
+En l'apartat següent veurem diferents tipus de mostrejos aleatoris.''
 
 \subsubsection{Mostreig aleatori simple}
-És el tipus de mostreig aleatori més senzill i tots els altres hi estan basats. Per obtenir una mostra, es numeren els elements de la població i se seleccionen a l'atzar els $n$ elements que ha de contenir la mostra. Si els individus són, per exemple, els cargols que hi ha en una capsa, per obtenir la mostra n'hi ha prou amb prendre'n $n$ per simple extracció.
+Aquesta és la forma més bàsica de mostreig aleatori, de la qual deriven la resta de tècniques. Consisteix a assignar un número a cada element de la població i, tot seguit, triar a l'atzar els $n$ individus que formaran part de la mostra. Per exemple, si la població és un conjunt de cargols dins una capsa, n'hi haurà prou amb extreure'n $n$ directament per obtenir la mostra desitjada.
 
 \subsubsection{Mostreig aleatori sistemàtic}
+Del llibre~\cite{Llibre_MACS_II}:
 Es numeren els individus i, a partir d'un elegit a l'atzar, es prenen els següents mitjançant «salts» numèrics iguals. Per exemple, si el primer és el 5è i el «salt» és de 13, es triaran el 5è, el 18è, el 31è, el 44è...
 
 El «salt» s'anomena \textbf{coeficient d'elevació}, $h$, i s'obté mitjançant el quocient sencer entre el nombre d'individus de la població, $N$, i el nombre d'individus de la mostra, $n$:
