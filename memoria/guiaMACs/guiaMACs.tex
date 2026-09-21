@@ -4,6 +4,7 @@
 \usepackage{url}
 \usepackage{hyperref}
 \usepackage{enumerate}
+\usepackage{pdfpages}
 
 % We're working with A4, which is 21cm by 29.7
 \setlength{\paperwidth}{210mm}
@@ -68,8 +69,8 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[RE,LO]{Prepara't per les MACs!}
-\fancyhead[LE,RO]{\leftmark}
-\fancyfoot[RE,LO]{Institut Sants}
+\fancyhead[LE,RO]{Institut Sants}
+\fancyfoot[RE,LO]{\leftmark}
 \fancyfoot[LE,RO]{\thepage}
 \renewcommand{\headrulewidth}{2pt}
 \renewcommand{\footrulewidth}{1pt}
@@ -82,12 +83,16 @@ L'examen de MACs~\cite{Temari-macs} consta de dos grans blocs, Anàlisi, i Proba
 
 El manual s'organitza en dos blocs: el primer bloc sobre l’Anàlisi i el segon de Probabilitat i Estadística.
 
+Finalment trobareu un solucionari de proves PAU pensat per ajudar a la preparació per a la prova.
 
 \input{./blocI/blocI}
 
 \input{./blocII/blocII}
 
 \appendix
+
+\input{./ExercicisPAU/exercicisPAU.tex}
+
 
 \input{./../license/fdl}
 
