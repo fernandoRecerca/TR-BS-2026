@@ -85,7 +85,7 @@ $P(X<80)=P(Z<1,25)=0,8944$
 
 Resposta: aproximadament el $89,44\%$ dels estudiants treuen menys de 80 punts.
 
-\subsubsection{Exercicis a resoldre distribució normal:}
+\subsubsection{Exercicis a resoldre de la distribució normal:}
 \begin{enumerate}
  \item Si $Z \sim N(0, 1)$, calcula $P(Z<2,1)$.
  \item Si $Z \sim N(0, 1)$, calcula $P(Z>1,33)$.
@@ -154,7 +154,7 @@ Resolució:
 
 Resposta: la probabilitat que hi hagi com a màxim 20 peces defectuoses és aproximadament $87,90\%$.
 
-\subsubsection{Exercicis a resoldre aproximació de la binomial per la normal:}
+\subsubsection{Exercicis a resoldre de l'aproximació de la binomial per la normal:}
 \begin{enumerate}
  \item Si $X \sim B(150, 0,4)$, comprova que es pot aproximar per una normal i calcula els paràmetres $\mu$ i $\sigma$ de la normal corresponent.
  \item Si $X \sim B(300, 0,25)$, calcula $P(X \leq 80)$ aproximant per la normal.
@@ -181,7 +181,6 @@ Cito el llibre de MACS de 2n~\cite{Llibre_MACS_II}:
 ``Una condició \emph{gairebé} indispensable perquè una mostra sigui representativa és que els seus elements s'hagin triat aleatòriament, a l'atzar. Si l'elecció és subjectiva, els prejudicis de qui fa l'elecció es projecten a la mostra triada, que reflectirà el que aquesta persona \emph{creu} que és la realitat.
 
 \textit{Es diu que un \textbf{mostreig} és \textbf{aleatori} quan els components de la mostra es trien a l'atzar, de manera que tots els individus de la població tenen, a priori, la mateixa probabilitat de ser triats.}
-% \end{quote}
 
 En l'apartat següent veurem diferents tipus de mostrejos aleatoris.''
 
@@ -190,7 +189,7 @@ Aquesta és la forma més bàsica de mostreig aleatori, de la qual deriven la re
 
 \subsubsection{Mostreig aleatori sistemàtic}
 Del llibre~\cite{Llibre_MACS_II}:
-Es numeren els individus i, a partir d'un elegit a l'atzar, es prenen els següents mitjançant «salts» numèrics iguals. Per exemple, si el primer és el 5è i el «salt» és de 13, es triaran el 5è, el 18è, el 31è, el 44è...
+``Es numeren els individus i, a partir d'un elegit a l'atzar, es prenen els següents mitjançant «salts» numèrics iguals. Per exemple, si el primer és el 5è i el «salt» és de 13, es triaran el 5è, el 18è, el 31è, el 44è...
 
 El «salt» s'anomena \textbf{coeficient d'elevació}, $h$, i s'obté mitjançant el quocient sencer entre el nombre d'individus de la població, $N$, i el nombre d'individus de la mostra, $n$:
 $$h=\frac{N}{n}.$$
@@ -222,11 +221,12 @@ Exercici resolt:
  \item coeficient d'elevació: $h = \frac{1300}{100} = 13$
     -Es tria aleatòriament un nombre de l'1 al 13. Suposem que surt el 5.
     -Els alumnes seleccionats per a la mostra són els que corresponen als nombres 5, 18, 31, 44, 57 ..., 1292.
-\end{enumerate}
+\end{enumerate}''
 
 
 \subsubsection{Mostreig aleatori estratificat}
-Si la població pot dividir-se en estrats relacionats amb la variable que s'està estudiant (per exemple, per edats: menors de 18 anys; de 18 a 50; més de 50), de vegades, abans de triar la mostra, convé fixar per endavant el nombre d'individus de cada estrat.
+Del llibre~\cite{Llibre_MACS_II}:
+``Si la població pot dividir-se en estrats relacionats amb la variable que s'està estudiant (per exemple, per edats: menors de 18 anys; de 18 a 50; més de 50), de vegades, abans de triar la mostra, convé fixar per endavant el nombre d'individus de cada estrat.
 
 La determinació del nombre d'elements que ha de tenir cada estrat s'anomena \textbf{afixació de la mostra}.
 
@@ -287,5 +287,123 @@ Ens falten 3 per arribar a 100. Augmentarem una unitat els tres quocients la par
 
 33 de 1r, 28 de 2n, 20 de 3r, 10 de 4t i 9 de 5è
 
-Perquè haver recorregut al mostreig estratificat amb repartiment proporcional sigui raonable, la característica que s'analitza ha de dependre, en alguna mesura, del curs que està fent l'estudiant, per exemple, l'estatura o el temps setmanal d'estudi.
+Perquè haver recorregut al mostreig estratificat amb repartiment proporcional sigui raonable, la característica que s'analitza ha de dependre, en alguna mesura, del curs que està fent l'estudiant, per exemple, l'estatura o el temps setmanal d'estudi.''
 
+\subsubsection{Obtenció de nombres aleatoris}
+Les calculadores tenen una tecla $Ran\#$, que genera nombres aleatoris i et dona un decimal entre 0,000 i 0,999. Si posem $N \times Ran\# + 1$ (N nombre d'elements de la població o mostra que volem estudiar), obtenim un número a l'atzar entre 1 i N. Ens hem de quedar només amb la part entera del número, sense tenir amb compte el decimal, ja que has sumat 1.
+
+\subsubsection{Estimadors}
+Un estimador és un valor que calculem a partir de les dades d'una mostra i que ens serveix per aproximar un valor de tota la població. Per exemple, $\mu$ és el valor de la mitjana de la població i $\bar{x}$ és el valor de la mitjana de la mostra. Així que $\bar{x}$ és un estimador de $\mu$.
+
+\subsubsection{Exercicis a resoldre de la introducció al mostreig estadístic:}
+\begin{enumerate}
+ \item Un institut vol saber quantes hores al dia dedica l'alumnat a mirar el mòbil. Per a això pregunta a $60$ dels $900$ alumnes del centre. Indica quina és la població, quina és la mostra i quina és la variable que s'estudia.
+
+ \item Una regidoria vol conèixer l'opinió dels habitants d'un poble sobre l'obertura d'una nova biblioteca. Decideix fer l'enquesta només a les persones que surten de la biblioteca actual un dimarts al matí. Creus que la mostra és representativa? Raona la resposta.
+
+ \item Una població té $N=250$ individus numerats de l'1 al 250. La tecla $Ran\#$ de la calculadora ha donat els valors $0,472$, $0,081$ i $0,935$. Quins individus de la població s'han seleccionat?
+
+ \item En una empresa hi ha $1200$ treballadors numerats de l'1 al 1200 i es vol triar una mostra de $48$ treballadors mitjançant mostreig aleatori sistemàtic.
+ \begin{enumerate}[a)]
+  \item Calcula el coeficient d'elevació $h$.
+  \item Si l'origen triat a l'atzar és el $7$, escriu els cinc primers elements de la mostra.
+  \item Quin és l'últim element de la mostra?
+ \end{enumerate}
+
+ \item En una ciutat hi viuen $1000$ persones d'una franja d'edat concreta: $400$ joves, $350$ adults i $250$ jubilats. Es vol triar una mostra de $100$ persones mitjançant mostreig estratificat amb repartiment proporcional. Quantes persones s'han de triar de cada grup?
+
+ \item Un poble de $12\,000$ habitants té tres barris: el barri A amb $4500$ habitants, el B amb $4200$ i el C amb $3300$. Es vol fer una enquesta sobre el transport públic a una mostra de $400$ persones.
+ \begin{enumerate}[a)]
+  \item Quin tipus de mostreig et sembla més adequat? Per què?
+  \item Calcula quantes persones s'han d'escollir de cada barri.
+ \end{enumerate}
+
+ \item Una empresa vol conèixer l'opinió dels seus $5000$ clients sobre un nou producte. Envia una enquesta per correu electrònic només als clients que van comprar el mes passat i en reben $300$ respostes voluntàries.
+ \begin{enumerate}[a)]
+  \item Identifica la població i la mostra.
+  \item Creus que la mostra és representativa de la població? Raona la resposta.
+  \item Proposa una manera de millorar el procés per obtenir una mostra més representativa.
+ \end{enumerate}
+\end{enumerate}
+
+
+\subsection{Estimació puntual de la mitjana}
+L'estimació puntual de la mitjana és utilitzar la mitjana d'una mostra ($\bar{x}$) per aproximar la mitjana de tota la població ($\mu$). És a dir, $\bar{x}$ és una estimació puntual de $\mu$.
+
+Exemple:
+
+Si volem saber la mitjana de l'edat d'un institut de 750 alumnes, però només estudiem l'edat de 50 d'ells i ens dona $\bar{x} = 14,7$. Llavors, 14,7 anys és l'estimació puntual de la mitjana de la població ($\mu$).
+
+Resumit:
+L'estimació puntual de la mitjana és el valor de la mitjana de la mostra que utilitzem per aproximar la mitjana de la població.
+
+\begin{itemize}
+\item $\mu$ és la mitjana de la població, que normalment és desconeguda.
+\item $\bar{x}$ és la mitjana de la mostra i l'estimador de la mitjana poblacional ($\mu$)
+\item El valor concret que obtenim en calcular $\bar{x}$ és l'estimació puntual de $\mu$.
+\end{itemize}
+
+\subsubsection{Exercici a resoldre d'estimació puntual de la mitjana}
+S'han pesat $8$ persones triades a l'atzar d'una població i s'han obtingut els pesos següents (en kg): $62, 70, 65, 80, 74, 68, 71, 70$.
+ \begin{enumerate}[a)]
+  \item Calcula la mitjana de la mostra, $\bar{x}$.
+  \item Quin paràmetre de la població estima $\bar{x}$? Com s'anomena aquest valor respecte d'aquest paràmetre?
+ \end{enumerate}
+
+\subsection{Proporció}
+La proporció ($p$) és la fracció del nombre d'individus que tenen una característica concreta entre la població o mostra:
+
+$$p = \frac{\mbox{individus amb la característica}}{\mbox{total}}$$
+
+A inferència, normalment no podem mirar tota la població, així que fem servir una mostra. La proporció mostral es calcula igual, però amb les dades de la mostra:
+
+$$\hat{p} = \frac{x}{n}$$
+
+On $x$ són els individus de la mostra amb la característica i $n$ la mida de la mostra. Aquesta $\hat{p}$ és l'estimació puntual de la proporció de la proporció real $p$.
+
+Exemple:
+
+Tenim una mostra de 200 peces, 16 són defectuoses. Llavors $\hat p = \frac{16}{200} = 0{,}08$. Podem estimar que un 8 \% de totes les peces són defectuoses.
+
+\subsubsection{Exercici a resoldre de la proporció}
+En una enquesta de satisfacció a $250$ clients d'una botiga, $85$ afirmen estar satisfets amb el servei. Calcula la proporció de clients satisfets a la mostra i explica quin valor de la població estima.
+
+\subsection{Desviació típica}
+La desviació típica ($\sigma$) mesura com de dispersos estan els valors de la mitjana. Si és petita, els valors estaran a prop de la mitjana, si és gran estaran més allunyats.
+
+$$\sigma = \sqrt{\frac{\sum (x_i - \mu)^2}{N}}$$
+
+És la arrel quadrada de la variància ($\sqrt{\mbox{variància}} = \mbox{desviació típica}$).
+
+Exemple: dades $2, 4, 4, 4, 5, 5, 7, 9$.
+
+Pas a pas:
+
+\begin{itemize}
+ \item Mitjana: $\mu = \frac{2+4+4+4+5+5+7+9}{8} = \frac{40}{8} = 5$
+ \item Quadrats de les diferències: $(2-5)^2 + (4-5)^2 + (4-5)^2 + (4-5)^2 + (5-5)^2 + (5-5)^2 + (7-5)^2 + (9-5)^2 = 9 + 1 + 1 + 1+ 0 + 0 + 4 + 16 = 32$
+ \item Variància: $\frac{32}{8} = 4$
+ \item Desviació típica: $\sigma = \sqrt{4} = 2$
+\end{itemize}
+
+Quan la calculem amb una mostra, s'anomena $s$ (la fórmula divideix entre $n-1$ en lloc de $n$):
+
+$$s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n-1}}$$
+
+És l'estimació puntual de la desviació típica de la població.
+
+\subsubsection{Exercicis a resoldre de desviació típica}
+\begin{enumerate}
+ \item Les notes d'un alumne en cinc controls han estat $3, 5, 6, 8, 8$.
+ \begin{enumerate}[a)]
+  \item Calcula'n la mitjana.
+  \item Calcula'n la desviació típica (arrodoneix a dos decimals).
+ \end{enumerate}
+
+ \item Dos grups d'alumnes han fet el mateix examen i les seves notes són:
+ \begin{itemize}
+  \item Grup A: $4, 5, 6, 7, 8$
+  \item Grup B: $2, 4, 6, 8, 10$
+ \end{itemize}
+ Comprova que els dos grups tenen la mateixa mitjana i calcula la desviació típica de cadascun. Quin grup té les notes més disperses? Què vol dir això?
+\end{enumerate}
