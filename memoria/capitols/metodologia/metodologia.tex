@@ -73,7 +73,10 @@ Per fer aquest treball vaig decidir treballar amb el portàtil del Departament d
 %Per fer aquest treball vaig optar per a treball amb l'ordinador que ens ha proporcionat el Departament d'Ensenyament. Aquest ordinador presenta moltes limitacions pel que fa a instal·lar i configurar programes nous. Per tal de superar aquest inconvenient, vaig optar per treballar dins d'una màquina virtual disponible en els ordinadors del centre. Aquesta màquina virtual està desenvolupada per l'empresa Oracle~\cite{Oracle} i permet instal·lar un sistema operatiu dins d'un altre sistema operatiu. Per tant, la màquina virtual permet que l'usuari configuri l'ordinador com vulgui, podent saltar-se els controls que imposa el Departament d'Ensenyament sense posar en perill la integritat del sistema operatiu principal.
 
 \subsection{Configuració de la màquina virtual}
-La màquina virtual funciona amb Linkat~\cite{Linkat}, una distribució de Linux basada en Ubuntu~\cite{Ubuntu} que ha creat el Departament d'Ensenyament. Això m'ha permès utilitzar eines de programació lliures i gratuïtes, instal·lar biblioteques mitjançant un gestor de paquets i adaptar el sistema a les necessitats del treball, tot en un entorn segur.
+Igual que en el treball que el Max he fet servir una màquina virtual, perô en comptes de fer servir Linkat~\cite{Linkat}, una distribució de Linux basada en Ubuntu~\cite{Ubuntu} que ha creat el Departament d'Ensenyament, he utilitzat Xubuntu~\cite{XUbuntu}, una versió més actual i lleugera que Linkat.
+
+El canvi de distribució es va produïr per la manca de suport del Departament d'Educació en la reparació d'una màquina virtual que ja no funcionava.
+Aquest sistema operatiu m'ha permès utilitzar eines de programació lliures i gratuïtes, instal·lar biblioteques mitjançant un gestor de paquets i adaptar el sistema a les necessitats del treball, tot en un entorn segur.
 %La màquina virtual de l'ordinador de l'alumnat porta instal·lada Linkat\cite{Linkat}, una distribució de Linux basada en Ubuntu~\cite{Ubuntu}, creada pel Departament d'Ensenyament, que em va permetre:
 %\begin{itemize}
  % \item Accedir a les eines habituals de programació de manera lliure i sense cap cost.
@@ -92,13 +95,13 @@ La màquina virtual funciona amb Linkat~\cite{Linkat}, una distribució de Linux
 %
 % En conjunt, aquest entorn de treball ha estat clau per avançar amb iteracions ràpides, mantenir la coherència i garantir que el projecte sigui replicable en altres contextos.
 
+\clearpage
 \section{Redacció i composició de la memòria}
-La memòria s’ha redactat íntegrament amb \LaTeX~\cite{LaTeX}, utilitzant l’editor \textbf{Kile}~\cite{kile}. Aquesta eina facilita l’organització del document en capítols i seccions, la compilació en PDF i la gestió de cites, bibliografia, figures, taules i fórmules.
+La memòria s’ha redactat íntegrament amb \LaTeX~\cite{LaTeX}, utilitzant l’editor \textbf{Kile}~\cite{kile} tal i com mostra la figura~\ref{fig:memoriaLatex}. Aquesta eina facilita l’organització del document en capítols i seccions, la compilació en PDF i la gestió de cites, bibliografia, figures, taules i fórmules.
 
-\newpage
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.69\textwidth]{./figures/memoriaLatex.png}
+  \includegraphics[width=0.9\textwidth]{./figures/memoriaLatex.png}
   \caption{Entorn de redacció de la memòria amb \LaTeX\ i l’editor Kile.}
   \label{fig:memoriaLatex}
 \end{figure}
@@ -119,16 +122,19 @@ El document s’ha dividit en diversos fitxers \texttt{.tex}, un per a cada cap�
 %Aquest conjunt d’eines ha fet possible una composició clara, estructurada i visualment atractiva, que reforça el caràcter acadèmic del treball.
 
 \section{Gestió de versions i col·laboració}
-Per controlar els canvis del treball i tenir-ne una còpia de seguretat, he fet servir \textbf{GitHub}~\cite{github}, una plataforma de control de versions basada en Git~\cite{git}. Tot el treball s'ha desenvolupat directament a la branca principal (\texttt{main}) del repositori TR-BS-2026~\cite{TR-BS-2026}, i cada canvi important de la guia i de la memòria s'ha registrat amb un \textit{commit}. D'aquesta manera, puc veure com ha evolucionat el treball i recuperar una versió anterior si cal.
+Per controlar els canvis del treball i tenir-ne una còpia de seguretat, he fet servir \textbf{GitHub}~\cite{github}, una plataforma de control de versions basada en Git~\cite{git}. Tot el treball s'ha desenvolupat directament a la branca principal (\texttt{main}) del repositori TR-BS-2026~\cite{TR-BS-2026}, i cada canvi important de la guia i de la memòria s'ha registrat amb un \textit{commit}. D'aquesta manera, qualsevol pot fer un seguiment de com ha evolucionat el treball i recuperar qualsevol versió anterior si cal.
+
+\clearpage
 
 \begin{figure}[h!]
  \centering
- \includegraphics[width=0.69\textwidth]{./figures/canvisgithub.png}
+ \includegraphics[width=1\textwidth]{./figures/canvisgithub.png}
  \caption{Repositori del treball a GitHub (amb l'historial de \textit{commit}s)}
+  \label{fig:github}
 \end{figure}
 
 
-Treballar directament a \texttt{main} és àgil, perquè cada canvi queda integrat a l'instant, però també implica més responsabilitat, ja que un error afecta la versió principal. Per reduir aquest risc, he fet \textit{commit}s petits i descriptius, fàcils d'identificar i revertir.
+Treballar directament a \texttt{main} és àgil, perquè cada canvi queda integrat a l'instant, tal i com es veu a la figura~\ref{fig:github}, però també implica més responsabilitat, ja que un error afecta la versió principal. Per reduir aquest risc, he fet \textit{commit}s petits i descriptius, fàcils d'identificar i revertir.
 
 A més, GitHub em permet tenir una còpia del repositori en línia i clonar-lo en un altre ordinador per continuar treballant. Això m'ha ajudat a tenir control dels canvis i ha facilitat la transferència de coneixement.
 
