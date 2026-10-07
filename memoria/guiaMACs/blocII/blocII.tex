@@ -351,6 +351,7 @@ S'han pesat $8$ persones triades a l'atzar d'una població i s'han obtingut els 
  \end{enumerate}
 
 \subsection{Proporció}
+\subsubsection{Que és la proporió}
 La proporció ($p$) és la fracció del nombre d'individus que tenen una característica concreta entre la població o mostra:
 
 $$p = \frac{\mbox{individus amb la característica}}{\mbox{total}}$$
@@ -369,6 +370,7 @@ Tenim una mostra de 200 peces, 16 són defectuoses. Llavors $\hat p = \frac{16}{
 En una enquesta de satisfacció a $250$ clients d'una botiga, $85$ afirmen estar satisfets amb el servei. Calcula la proporció de clients satisfets a la mostra i explica quin valor de la població estima.
 
 \subsection{Desviació típica}
+\subsubsection{Que és la desviació típica}
 \label{desviació-típica}
 La desviació típica ($\sigma$) mesura com de dispersos estan els valors de la mitjana. Si és petita, els valors estaran a prop de la mitjana, si és gran estaran més allunyats.
 
@@ -408,3 +410,156 @@ $$s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n-1}}$$
  \end{itemize}
  Comprova que els dos grups tenen la mateixa mitjana i calcula la desviació típica de cadascun. Quin grup té les notes més disperses? Què vol dir això?
 \end{enumerate}
+
+\subsection{Intervals de confiança basats en la distribució normal}
+\subsubsection{Que són els intervals de confiança basats en la distribució normal}
+L'estimació puntual ens dona un sol valor, el valor de la mitjana, $\mu$, és aproximadament el de la mitjana de la mostra, $\bar x$, però és gairebé impossible que coincideixi exactament amb $\mu$. Un \textbf{interval de confiança} dona un rang de valors en el que creiem que està el paràmetre real de la població (en aquest cas $\mu$), amb un \textbf{cert nivell de confiança}.
+
+\subsubsection{Definicions}
+\begin{itemize}
+\item Nivell de confiança ($1-\alpha$): indica el grau de confiança amb què es construeix l'interval. Els nivells més habituals són el 90\%, el 95\% i el 99\%.
+
+\item Valor crític ($z_{\alpha/2}$ o $z_y$): és el valor de la distribució normal estàndard $N(0,1)$ que deixa una àrea de $\alpha/2$ a la dreta. Per tant, compleix:
+\[
+P(-z_{\alpha/2}<Z<z_{\alpha/2})=1-\alpha.
+\]
+A les PAU sempre apareix com $z-y$. Els valors més habituals són:
+
+\begin{center}
+\begin{tabular}{c|c}
+    Nivell de confiança & $z_y$ \\
+    \hline
+    90\% & 1,645 \\
+    95\% & 1,96 \\
+    99\% & 2,575
+\end{tabular}
+\end{center}
+\end{itemize}
+
+\subsubsection{Consells}
+En aquests exercicis de les PAU sempre et proporcionen les tres fórmules dels intervals que s'explicaran a continuació, de manera que no cal aprendre-les de memòria. Per resoldre aquests exercicis, el més important és llegir bé l'enunciat, identificar què representa cada dada i escollir l'interval que correspon en cada cas, segons les dades que tens. Sobretot, cal fixar-se en si l'exercici demana estimar una mitjana o una proporció i, en el cas de la mitjana, si coneixem la desviació típica de la població $\sigma$ o només la de la mostra $s$. Un cop identificat, només cal substituir les dades a la fórmula i fer els càlculs.
+
+\subsubsection{Interval de confiança per la mitjana ($\mu$)}
+Quan volem estimar la mitjana d'una població a partir d'una mostra, podem construir un interval de confiança al voltant de la mitjana mostral \(\bar{x}\). Aquest interval ens dona un rang de valors que utilitzem per estimar on es troba la mitjana real de la població, amb un determinat nivell de confiança.
+
+Si la població segueix una distribució normal $N(\mu,\sigma)$, o bé la mostra és prou gran ($n \geq 30$), i coneixem la desviació típica de la població $\sigma$, podem utilitzar la distribució normal. En aquest cas, l'interval de confiança és:
+
+$$
+\left(
+\bar{x}-z_y\frac{\sigma}{\sqrt{n}},
+\ \
+\bar{x}+z_y\frac{\sigma}{\sqrt{n}}
+\right)
+$$
+
+on:
+\begin{itemize}
+\item $\bar{x}$ és la mitjana de la mostra.
+\item $\sigma$ és la desviació típica de la població.
+\item $n$ és la mida de la mostra.
+\item $z_y$ és el valor de la distribució normal associat al nivell de confiança escollit.
+\end{itemize}
+
+\subsubsection{Exercici resolt d'interval de confiança per la mitjana ($\mu$)}
+Una variable té una desviació típica $\sigma=12$. En una mostra de $36$ individus s'obté una mitjana $\bar{x}=65$. Calcula l'interval de confiança del 95\% per a $\mu$.
+
+Per a un nivell de confiança del 95\%, tenim $z_y=1{,}96$.
+
+Primer calculem:
+
+$$
+1{,}96\cdot\frac{12}{\sqrt{36}}
+=
+1{,}96\cdot2
+=
+3{,}92
+$$
+
+L'interval que obtenim és:
+
+$$
+(65-3{,}92,\ 65+3{,}92)
+=
+(61{,}08,\ 68{,}92)
+$$
+
+L'interval obtingut amb un 95\% de confiança, estimem que la mitjana de la població es troba entre $61{,}08$ i $68{,}92$.
+
+\subsubsection{Interval de confiança per a la mitjana quan no coneixem $\sigma$}
+
+En molts casos no coneixem la desviació típica de la població $\sigma$. En lloc seu, utilitzem la desviació típica calculada a partir de la mostra, que representem amb $s$.
+
+L'interval és molt semblant a l'anterior, però en lloc de $\sigma$ fem servir $s$:
+
+$$
+\left(
+\bar{x}-z_y\frac{s}{\sqrt{n}},
+\ \
+\bar{x}+z_y\frac{s}{\sqrt{n}}
+\right)
+$$
+
+Així doncs, el procediment és pràcticament el mateix: calculem la mitjana de la mostra, obtenim la desviació típica $s$ i la substituïm a la fórmula.
+
+\subsubsection{Exercici resolt d'interval de confiança per a la mitjana quan no coneixem $\sigma$}
+En una mostra de $100$ individus s'obté una mitjana $\bar{x}=72$ i una desviació típica $s=10$. Calcula l'interval de confiança del 95\% per a la mitjana.
+
+Com que el nivell de confiança és del 95\%, tenim $z_y=1{,}96$.
+
+Substituïm els valors a la fórmula:
+
+$$
+\left(
+72-1{,}96\frac{10}{\sqrt{100}},
+\ \
+72+1{,}96\frac{10}{\sqrt{100}}
+\right)
+$$
+
+Com que $\sqrt{100}=10$:
+
+$$
+(72-1{,}96,\ 72+1{,}96)
+=
+(70{,}04,\ 73{,}96)
+$$
+
+Per tant, obtenim $(70{,}04,\ 73{,}96)$ com a interval de confiança, amb un nivell del 95\% de confiança.
+
+\subsubsection{Interval de confiança per a una proporció}
+
+Per estimar una proporció de la població, utilitzem la proporció observada a la mostra, que representem amb $\hat{p}$.
+
+Si la mostra és prou gran, $\hat{p}$ es pot aproximar mitjançant una distribució normal. L'interval de confiança és:
+
+$$
+\left(
+\hat{p}-z_y\sqrt{\frac{\hat{p}(1-\hat{p})}{n}},
+\ \
+\hat{p}+z_y\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\right)
+$$
+
+\subsubsection{Exercici resolt d'interval de confiança per a una proporció}
+En una enquesta a $250$ clients, $85$ estan satisfets. Per tant:
+
+$$
+\hat{p}=\frac{85}{250}=0{,}34
+$$
+
+Per a un nivell de confiança del 95\%, $z_y=1{,}96$. Calculem:
+
+$$
+1{,}96\sqrt{\frac{0{,}34\cdot0{,}66}{250}}
+\approx0{,}059
+$$
+
+Per tant, l'interval és:
+
+$$
+(0{,}34-0{,}059,\ 0{,}34+0{,}059)
+=
+(0{,}281,\ 0{,}399)
+$$
+
+Amb aquest nivell de confiança, estimem que entre el 28,1\% i el 39,9\% dels clients de la botiga estan satisfets.
