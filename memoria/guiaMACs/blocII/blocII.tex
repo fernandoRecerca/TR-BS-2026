@@ -1,8 +1,8 @@
 \chapter{Bloc II : Probabilitat i estadística}
+Aquest bloc recull els temes de probabilitat i estadística de l'examen de MACS. Tot el temari és nou per als estudiants de MAT, per això s'expliquen de manera pràctica i directa, amb exercicis resolts pas a pas i exercicis per practicar. Si necessites més teoria o més exercicis, pots complementar-lo amb el llibre de MACS II~\cite{Llibre_MACS_II}.
 
 \section{Probabilitat}
 \subsection{Distribució normal}
-
 \subsubsection{Què és la distribució normal?}
 Imagina’t que mesures l’alçada de tots els alumnes del teu curs. La majoria estaran a prop de l’alçada mitjana (ni molt alts ni molt baixos), però a mesura que et vas allunyant més d’aquesta mitjana (molt alt o molt baix) menys gent trobes. Si dibuixes aquestes alçades en un gràfic surt una corba en forma de campana, coneguda com a campana de Gauss.
 Doncs la distribució normal és el model matemàtic d’aquesta campana.
@@ -420,10 +420,8 @@ L'estimació puntual ens dona un sol valor, el valor de la mitjana, $\mu$, és a
 \item Nivell de confiança ($1-\alpha$): indica el grau de confiança amb què es construeix l'interval. Els nivells més habituals són el 90\%, el 95\% i el 99\%.
 
 \item Valor crític ($z_{\alpha/2}$ o $z_y$): és el valor de la distribució normal estàndard $N(0,1)$ que deixa una àrea de $\alpha/2$ a la dreta. Per tant, compleix:
-\[
-P(-z_{\alpha/2}<Z<z_{\alpha/2})=1-\alpha.
-\]
-A les PAU sempre apareix com $z-y$. Els valors més habituals són:
+$$P(-z_{\alpha/2}<Z<z_{\alpha/2})=1-\alpha$$
+A les PAU sempre apareix com $z_y$. Els valors més habituals són:
 
 \begin{center}
 \begin{tabular}{c|c}
@@ -444,13 +442,7 @@ Quan volem estimar la mitjana d'una població a partir d'una mostra, podem const
 
 Si la població segueix una distribució normal $N(\mu,\sigma)$, o bé la mostra és prou gran ($n \geq 30$), i coneixem la desviació típica de la població $\sigma$, podem utilitzar la distribució normal. En aquest cas, l'interval de confiança és:
 
-$$
-\left(
-\bar{x}-z_y\frac{\sigma}{\sqrt{n}},
-\ \
-\bar{x}+z_y\frac{\sigma}{\sqrt{n}}
-\right)
-$$
+$$\left(\bar{x}-z_y\frac{\sigma}{\sqrt{n}},\ \ \bar{x}+z_y\frac{\sigma}{\sqrt{n}}\right)$$
 
 on:
 \begin{itemize}
@@ -467,21 +459,11 @@ Per a un nivell de confiança del 95\%, tenim $z_y=1{,}96$.
 
 Primer calculem:
 
-$$
-1{,}96\cdot\frac{12}{\sqrt{36}}
-=
-1{,}96\cdot2
-=
-3{,}92
-$$
+$$1{,}96\cdot\frac{12}{\sqrt{36}} = 1{,}96\cdot2 = 3{,}92$$
 
 L'interval que obtenim és:
 
-$$
-(65-3{,}92,\ 65+3{,}92)
-=
-(61{,}08,\ 68{,}92)
-$$
+$$(65-3{,}92,\ 65+3{,}92) = (61{,}08,\ 68{,}92)$$
 
 L'interval obtingut amb un 95\% de confiança, estimem que la mitjana de la població es troba entre $61{,}08$ i $68{,}92$.
 
@@ -491,13 +473,7 @@ En molts casos no coneixem la desviació típica de la població $\sigma$. En ll
 
 L'interval és molt semblant a l'anterior, però en lloc de $\sigma$ fem servir $s$:
 
-$$
-\left(
-\bar{x}-z_y\frac{s}{\sqrt{n}},
-\ \
-\bar{x}+z_y\frac{s}{\sqrt{n}}
-\right)
-$$
+$$\left(\bar{x}-z_y\frac{s}{\sqrt{n}},\ \ \bar{x}+z_y\frac{s}{\sqrt{n}}\right)$$
 
 Així doncs, el procediment és pràcticament el mateix: calculem la mitjana de la mostra, obtenim la desviació típica $s$ i la substituïm a la fórmula.
 
@@ -508,21 +484,11 @@ Com que el nivell de confiança és del 95\%, tenim $z_y=1{,}96$.
 
 Substituïm els valors a la fórmula:
 
-$$
-\left(
-72-1{,}96\frac{10}{\sqrt{100}},
-\ \
-72+1{,}96\frac{10}{\sqrt{100}}
-\right)
-$$
+$$\left(72-1{,}96\frac{10}{\sqrt{100}},\ \ 72+1{,}96\frac{10}{\sqrt{100}}\right)$$
 
 Com que $\sqrt{100}=10$:
 
-$$
-(72-1{,}96,\ 72+1{,}96)
-=
-(70{,}04,\ 73{,}96)
-$$
+$$(72-1{,}96,\ 72+1{,}96) = (70{,}04,\ 73{,}96)$$
 
 Per tant, obtenim $(70{,}04,\ 73{,}96)$ com a interval de confiança, amb un nivell del 95\% de confiança.
 
@@ -532,34 +498,21 @@ Per estimar una proporció de la població, utilitzem la proporció observada a 
 
 Si la mostra és prou gran, $\hat{p}$ es pot aproximar mitjançant una distribució normal. L'interval de confiança és:
 
-$$
-\left(
-\hat{p}-z_y\sqrt{\frac{\hat{p}(1-\hat{p})}{n}},
-\ \
-\hat{p}+z_y\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
-\right)
-$$
+$$\left(\hat{p}-z_y\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}, \ \ \hat{p}+z_y\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right)$$
 
 \subsubsection{Exercici resolt d'interval de confiança per a una proporció}
 En una enquesta a $250$ clients, $85$ estan satisfets. Per tant:
 
-$$
-\hat{p}=\frac{85}{250}=0{,}34
-$$
+$$\hat{p}=\frac{85}{250}=0{,}34$$
 
 Per a un nivell de confiança del 95\%, $z_y=1{,}96$. Calculem:
 
-$$
-1{,}96\sqrt{\frac{0{,}34\cdot0{,}66}{250}}
-\approx0{,}059
-$$
+$$1{,}96\sqrt{\frac{0{,}34\cdot0{,}66}{250}}\approx0{,}059$$
 
 Per tant, l'interval és:
 
-$$
-(0{,}34-0{,}059,\ 0{,}34+0{,}059)
-=
-(0{,}281,\ 0{,}399)
-$$
+$$(0{,}34-0{,}059,\ 0{,}34+0{,}059) = (0{,}281,\ 0{,}399)$$
 
 Amb aquest nivell de confiança, estimem que entre el 28,1\% i el 39,9\% dels clients de la botiga estan satisfets.
+
+\subsubsection{Exercicis a resoldre dels intervals de confiança basats en la distribució normal}
