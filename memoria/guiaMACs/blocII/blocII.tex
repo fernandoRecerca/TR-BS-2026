@@ -17,7 +17,7 @@ Doncs la distribució normal és el model matemàtic d’aquesta campana.
 \subsubsection{Definició i paràmetres}
 La distribució normal s’expressa com: $X \sim N(\mu, \sigma)$, on $\mu$ és la mitjana i $\sigma$ la desviació típica~\ref{desviació-típica}. Visualment, $\mu$ marca el centre de la campana, mentre que $\sigma$ determina l'amplada: com més gran és $\sigma$, més ampla és la campana i com més petita és, més estreta.
 
-La versió estàndard per mirar les probabilitats és quan $Z \sim N(0,1)$, perquè les taules de probabilitat estan fetes per a aquesta distribució. Tot i que, a les PAU de Catalunya no és necessari utilitzar aquestes taules, ja que en l’enunciat et donen directament la probabilitat.
+La versió estàndard per mirar les probabilitats és quan $Z \sim N(0,1)$, perquè les taules de probabilitat estan fetes per a aquesta distribució. Tot i que, a les PAU de Catalunya no és necessari utilitzar aquestes taules, ja que en l’enunciat et donen directament la probabilitat. En algun exercici en concret en aquesta guia la utilitzarem per a què s'entengui millor.
 
 En el cas que la variable no segueixi la distribució $N(0,1)$, es pot transformar en una distribució normal estàndard mitjançant la tipificació: $Z = \frac{X - \mu}{\sigma}$.
 
@@ -73,7 +73,7 @@ Enunciat: Les notes d'un examen d'una classe segueixen $X \sim N(65, 12)$. Calcu
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.7\textwidth]{./figures/Exercici_resolt_4.png}
-    \caption{Àrea corresponent a $X \sim N(65, 12)$ sota la corba normal estàndard.}
+    \caption{Àrea corresponent a $P(X<80)$ sota la corba normal estàndard.}
 \end{figure}
 
 Resolució:
@@ -91,7 +91,7 @@ Resposta: aproximadament el $89,44\%$ dels estudiants treuen menys de 80 punts.
  \item Si $Z \sim N(0, 1)$, calcula $P(Z>1,33)$.
  \item Si $Z \sim N(0, 1)$, calcula $P(Z<-0,55)$.
  \item Si $Z \sim N(0, 1)$, calcula $P(-2<Z<0,5)$.
- \item Si $Z \sim N(0, 1)$, troba $z$ tal que $P(Z<z)0,95$.
+ \item Si $Z \sim N(0, 1)$, troba $z$ tal que $P(Z<z) = 0,95$.
  \item Si $X \sim N(40, 5)$, calcula $P(X<47)$.
  \item Si $X \sim N(120, 20)$, calcula $P(X>100)$.
  \item El temps de reacció d'un grup de conductors segueix $N(0,75, 0,12)$ segons. Quina probabilitat té un conductor que tingui un temps de reacció més gran de $0,9$ s?
@@ -435,7 +435,7 @@ A les PAU sempre apareix com $z_y$. Els valors més habituals són:
 \end{itemize}
 
 \subsubsection{Consells}
-En aquests exercicis de les PAU sempre et proporcionen les tres fórmules dels intervals que s'explicaran a continuació, de manera que no cal aprendre-les de memòria. Per resoldre aquests exercicis, el més important és llegir bé l'enunciat, identificar què representa cada dada i escollir l'interval que correspon en cada cas, segons les dades que tens. Sobretot, cal fixar-se en si l'exercici demana estimar una mitjana o una proporció i, en el cas de la mitjana, si coneixem la desviació típica de la població $\sigma$ o només la de la mostra $s$. Un cop identificat, només cal substituir les dades a la fórmula i fer els càlculs.
+En aquests exercicis de les PAU sempre et proporcionen la fórmula de l'interval que necessites utilitzar o les tres fórmules dels intervals que s'explicaran a continuació, i hauràs d'utilitzar el que sigui correcte. De manera que no cal aprendre-les de memòria. Per resoldre aquests exercicis, el més important és llegir bé l'enunciat, identificar què representa cada dada i escollir l'interval que correspon en cada cas, segons les dades que tens. Sobretot, cal fixar-se en si l'exercici demana estimar una mitjana o una proporció i, en el cas de la mitjana, si coneixem la desviació típica de la població $\sigma$ o només la de la mostra $s$. Un cop identificat, només cal substituir les dades a la fórmula i fer els càlculs.
 
 \subsubsection{Interval de confiança per la mitjana ($\mu$)}
 Quan volem estimar la mitjana d'una població a partir d'una mostra, podem construir un interval de confiança al voltant de la mitjana mostral \(\bar{x}\). Aquest interval ens dona un rang de valors que utilitzem per estimar on es troba la mitjana real de la població, amb un determinat nivell de confiança.
@@ -519,7 +519,7 @@ Amb aquest nivell de confiança, estimem que entre el 28,1\% i el 39,9\% dels cl
 Per a fer els següents exercicis et pots ajudar de les fórmules anteriors.
 
 \begin{enumerate}
- \item Troba el valor crític $z_{\alpha/2}$ per als nivells de confiança del $90\%$, $95\%$ i $99\%$ (ajuda: busca a la taula~\ref{tau-normal} el valor $1-\frac{\alpha}{2}$).
+ \item Troba el valor crític $z_y$ per als nivells de confiança del $90\%$, $95\%$ i $99\%$ (ajuda: busca a la taula~\ref{tau-normal} el valor $1-\frac{\alpha}{2}$).
  \item Una variable segueix una distribució $N(\mu, 15)$. Amb una mostra de $100$ individus s'ha obtingut una mitjana $\bar{x}=120$. Calcula l'interval de confiança per a $\mu$ amb un nivell de confiança del $90\%$.
  \item  El temps, en minuts, que triguen els alumnes d'un institut a arribar-hi segueix una distribució $N(\mu, 7)$. En una mostra de $49$ alumnes, la mitjana ha estat de $26$ minuts. Calcula l'interval de confiança al $95\%$ per al temps mitjà de tots els alumnes de l'institut.
  \item  Les puntuacions d'un test segueixen una distribució $N(\mu, 15)$. Amb una mostra de $100$ persones s'ha obtingut l'interval de confiança $(97,06;\ 102,94)$ per a $\mu$. Calcula la mitjana de la mostra i el nivell de confiança de l'interval.
