@@ -1,5 +1,6 @@
 \chapter{Bloc II : Probabilitat i estadística}
 Aquest bloc recull els temes de probabilitat i estadística de l'examen de MACS. Tot el temari és nou per als estudiants de MAT, per això s'expliquen de manera pràctica i directa, amb exercicis resolts pas a pas i exercicis per practicar. Si necessites més teoria o més exercicis, pots complementar-lo amb el llibre de MACS II~\cite{Llibre_MACS_II}.
+\newpage
 
 \section{Probabilitat}
 \subsection{Distribució normal}
@@ -17,7 +18,7 @@ Doncs la distribució normal és el model matemàtic d’aquesta campana.
 \subsubsection{Definició i paràmetres}
 La distribució normal s’expressa com: $X \sim N(\mu, \sigma)$, on $\mu$ és la mitjana i $\sigma$ la desviació típica~\ref{desviació-típica}. Visualment, $\mu$ marca el centre de la campana, mentre que $\sigma$ determina l'amplada: com més gran és $\sigma$, més ampla és la campana i com més petita és, més estreta.
 
-La versió estàndard per mirar les probabilitats és quan $Z \sim N(0,1)$, perquè les taules de probabilitat estan fetes per a aquesta distribució. A les PAU no et donen la taula de la normal: només alguns valors de referència (per exemple, $P(-1,96 \leq Z \leq 1,96) = 0,95$), i els exercicis estan pensats perquè només necessitis aquests. Tot i així, en aquesta guia fem servir la taula per entendre com funciona la distribució i per practicar la tipificació.
+La versió estàndard per mirar les probabilitats és quan $Z \sim N(0,1)$, perquè les taules de probabilitat estan fetes per a aquesta distribució. A les PAU no et donen la taula de la normal: només alguns valors de referència (per exemple, $P(-1,96 \leq Z \leq 1,96) = 0,95$), i els exercicis estan pensats perquè només necessitis aquests. Tot i això, en aquesta guia fem servir la taula per entendre com funciona la distribució i per practicar la tipificació.
 
 En el cas que la variable no segueixi la distribució $N(0,1)$, es pot transformar en una distribució normal estàndard mitjançant la tipificació: $Z = \frac{X - \mu}{\sigma}$.
 
@@ -34,7 +35,7 @@ Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z<1,45)$.
 \end{figure}
 
 Resolució:
-La taula~\ref{tau-normal} de la dona directament l'àrea acumulada a l'esquerra de $Z \sim N(0,1)$ (la probabilitat que necessitem calcular). Només cal buscar la fila 1,4 i la columna 0,05 (per formar 1,45):
+La taula~\ref{tau-normal} de la dona directament l'àrea acumulada a l'esquerra de $Z \sim N(0,1)$ (la probabilitat que necessitem calcular). Només cal buscar la fila 1,4 i la columna 0,05 (per formar-ne 1,45):
 $P(Z<1,45)=0,9265$
 No cal cap càlcul previ: la taula ja et dona la probabilitat acumulada fins a aquell valor.
 
@@ -49,7 +50,7 @@ Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z>0,8)$.
 Resolució:
 La taula només dona probabilitats acumulades "menys que". Com que tota l'àrea sota la corba val 1:
 $P(Z>0,8)=1-P(Z<0,8)=1-0,7881=0,2119$
-Idea clau: sempre que et demanin ``més gran que'', passau a ``1 menys la probabilitat de la taula''
+Idea clau: sempre que et demanin ``més gran que'', passeu a ``1 menys la probabilitat de la taula''.
 
 Exercici 3:
 Enunciat: Si $Z \sim N(0,1)$, calcula $P(-1<Z<1,5)$.
@@ -60,7 +61,7 @@ Enunciat: Si $Z \sim N(0,1)$, calcula $P(-1<Z<1,5)$.
 \end{figure}
 
 Resolució:
-Aquí et donen un interval, així que és la resta de dues àrees acumulades (és la àrea acumulada del número més gran, $1,5$, menys la àrea del petit, $-1$):
+Aquí et donen un interval, així que és la resta de dues àrees acumulades (és l'àrea acumulada del número més gran, $1,5$, menys l'àrea del petit, $-1$):
 $P(-1<Z<1,5)=P(Z<1,5)-P(Z<-1)$
 Per a $Z<-1$, fem servir la simetria de la normal:
 $P(Z<-1)=1-P(Z<1)=1-0,8413=0,1587$
@@ -119,7 +120,7 @@ $B(n, p) \approx N(n \cdot p, \sqrt{n \cdot p \cdot q}$
 En l'aproximació d'ambdues distribucions cal tenir en compte que la binomial és discreta i la normal, contínua.}
 
 \subsubsection{La correcció de continuïtat}
-La binomial és discreta (només agafa valors enters), mentre que la normal és contínua (pot pendre qualsevol valor dins d'un interval, incloent-hi els tots els decimals possibles). Per passar d'una a l'altra, cal ``fer més gran'' cada valor enter k en un interval [k-0,5, k+0,5].
+La binomial és discreta (només agafa valors enters), mentre que la normal és contínua (pot prendre qualsevol valor dins d'un interval, incloent-hi tots els decimals possibles). Per passar d'una a l'altra, cal ``fer més gran'' cada valor enter k en un interval [k-0,5, k+0,5].
 Taula de conversió:
 \begin{table}[h!]
     \centering
@@ -149,7 +150,7 @@ Resolució:
  \item Comprovar condicions: $np=16\geq3$, $nq=184\geq3$
  \item Calcular els paràmetres: $$\mu=16$$ $$\sigma=\sqrt{200 \cdot 0,08 \cdot 0,92}\approx 3,84$$
  \item Aplicar la correcció de continuïtat: com que volem $P(X\leq20)$, passem a $P(Y<20,5)$
- \item Tipificar: $Z=\frac{20,5-16}{3,83}\approx 1,17$
+ \item Tipificar: $Z=\frac{20,5-16}{3,84}\approx 1,17$
  \item Consultar la taula $N(0,1)$: $P(Z<1,17)\approx 0,8790$
 \end{enumerate}
 
@@ -165,17 +166,16 @@ Resposta: la probabilitat que hi hagi com a màxim 20 peces defectuoses és apro
  \item En una companyia telefònica, s'ha observat que aproximadament un $12\%$ de les trucades al servei d'atenció al client duren més de $10$ minuts. D'una mostra de $400$ trucades, calcula la probabilitat que entre $40$ i $55$ (ambdós inclosos) durin més de $10$ minuts.
  \item Segons un estudi, el $30\%$ dels joves d'entre $16$ i $18$ anys practica algun esport federat. Es tria una mostra aleatòria de $120$ joves d'aquesta franja d'edat. Calcula, de manera raonada, la probabilitat que com a mínim $30$ dels joves de la mostra practiquin algun esport federat.
 \end{enumerate}
-
-
+\newpage
 
 \section{Inferència}
 \subsection{La introducció al mostreig estadístic}
-La \textbf{població} o \textbf{l'univers} és el conjunt de tots els individus o elements que formen part del nostre estudi
+La \textbf{població} o \textbf{l'univers} és el conjunt de tots els individus o elements que formen part del nostre estudi.
 
 Una \textbf{mostra} és un subconjunt d'elements extrets d'una població més gran, que s'utilitza per estudiar les característiques d'aquesta població sense haver-la d'analitzar completament.
 
 \subsubsection{Mostreig}
-Per a que la mostra sigui el més representativa possible a la població existeixen diferents tipus de \textbf{mostreigs}. A continuació veurem com fer el mostreig perquè ens doni mostres representatives.
+Perquè la mostra sigui tan representativa com sigui possible a la població existeixen diferents tipus de \textbf{mostreigs}. A continuació veurem com fer el mostreig perquè ens doni mostres representatives.
 
 \subsubsection{Mostreig aleatori}
 Cito el llibre de MACS de 2n~\cite{Llibre_MACS_II}:
@@ -186,7 +186,7 @@ Cito el llibre de MACS de 2n~\cite{Llibre_MACS_II}:
 En l'apartat següent veurem diferents tipus de mostrejos aleatoris.''
 
 \subsubsection{Mostreig aleatori simple}
-Aquesta és la forma més bàsica de mostreig aleatori, de la qual deriven la resta de tècniques. Consisteix a assignar un número a cada element de la població i, tot seguit, triar a l'atzar els $n$ individus que formaran part de la mostra. Per exemple, si la població és un conjunt de cargols dins una capsa, n'hi haurà prou amb extreure'n $n$ directament per obtenir la mostra desitjada.
+Aquesta és la forma més bàsica de mostreig aleatori, de la qual deriven la resta de tècniques. Consisteix a assignar un número a cada element de la població i, tot seguit, triar a l'atzar els $n$ individus que formaran part de la mostra. Per exemple, si la població és un conjunt de caragols dins una capsa, n'hi haurà prou amb extreure'n $n$ directament per obtenir la mostra desitjada.
 
 \subsubsection{Mostreig aleatori sistemàtic}
 Del llibre~\cite{Llibre_MACS_II}:
@@ -209,7 +209,7 @@ Aquesta forma de mostreig només és vàlida si el criteri pel qual s'han numera
 
 
 Exercici resolt:
-1. En un cetre escolar hi ha 1300 alumnes. Explica com es tria una mostra de 100 individus:
+1. En un centre escolar hi ha 1300 alumnes. Explica com es tria una mostra de 100 individus:
 \begin{enumerate}[a)]
  \item Mitjançant mostreig aleatori simple.
 
@@ -352,7 +352,7 @@ S'han pesat $8$ persones triades a l'atzar d'una població i s'han obtingut els 
  \end{enumerate}
 
 \subsection{Proporció}
-\subsubsection{Que és la proporió}
+\subsubsection{Que és la proporció}
 La proporció ($p$) és la fracció del nombre d'individus que tenen una característica concreta entre la població o mostra:
 
 $$p = \frac{\mbox{individus amb la característica}}{\mbox{total}}$$
@@ -361,7 +361,7 @@ A inferència, normalment no podem mirar tota la població, així que fem servir
 
 $$\hat{p} = \frac{x}{n}$$
 
-On $x$ són els individus de la mostra amb la característica i $n$ la mida de la mostra. Aquesta $\hat{p}$ és l'estimació puntual de la proporció de la proporció real $p$.
+On $x$ són els individus de la mostra amb la característica i $n$ la mida de la mostra. Aquesta $\hat{p}$ és l'estimació puntual de la proporció real $p$.
 
 Exemple:
 
@@ -373,7 +373,7 @@ En una enquesta de satisfacció a $250$ clients d'una botiga, $85$ afirmen estar
 \subsection{Desviació típica}
 \subsubsection{Que és la desviació típica}
 \label{desviació-típica}
-La desviació típica ($\sigma$) mesura com de dispersos estan els valors de la mitjana. Si és petita, els valors estaran a prop de la mitjana, si és gran estaran més allunyats.
+La desviació típica ($\sigma$) mesura com estan de dispersos els valors de la mitjana. Si és petita, els valors estaran a prop de la mitjana, si és gran estaran més allunyats.
 
 $$\sigma = \sqrt{\frac{\sum (x_i - \mu)^2}{N}}$$
 
@@ -436,7 +436,7 @@ A les PAU sempre apareix com $z_y$. Els valors més habituals són:
 \end{itemize}
 
 \subsubsection{Consells}
-En aquests exercicis de les PAU sempre et proporcionen la fórmula de l'interval que necessites utilitzar o les tres fórmules dels intervals que s'explicaran a continuació, i hauràs d'utilitzar el que sigui correcte. De manera que no cal aprendre-les de memòria. Per resoldre aquests exercicis, el més important és llegir bé l'enunciat, identificar què representa cada dada i escollir l'interval que correspon en cada cas, segons les dades que tens. Sobretot, cal fixar-se en si l'exercici demana estimar una mitjana o una proporció i, en el cas de la mitjana, si coneixem la desviació típica de la població $\sigma$ o només la de la mostra $s$. Un cop identificat, només cal substituir les dades a la fórmula i fer els càlculs.
+En aquests exercicis de les PAU sempre et proporcionen la fórmula de l'interval que necessites utilitzar o les tres fórmules dels intervals que s'explicaran a continuació, i hauràs de fer servir el que sigui correcte. De manera que no cal aprendre-les de memòria. Per resoldre aquests exercicis, el més important és llegir bé l'enunciat, identificar què representa cada dada i escollir l'interval que correspon en cada cas, segons les dades que tens. Sobretot, cal fixar-se en si l'exercici demana estimar una mitjana o una proporció i, en el cas de la mitjana, si coneixem la desviació típica de la població $\sigma$ o només la de la mostra $s$. Un cop identificat, només cal substituir les dades a la fórmula i fer els càlculs.
 
 \subsubsection{Interval de confiança per la mitjana ($\mu$)}
 Quan volem estimar la mitjana d'una població a partir d'una mostra, podem construir un interval de confiança al voltant de la mitjana mostral \(\bar{x}\). Aquest interval ens dona un rang de valors que utilitzem per estimar on es troba la mitjana real de la població, amb un determinat nivell de confiança.
@@ -570,8 +570,7 @@ Per a fer els següents exercicis et pots ajudar de les fórmules anteriors.
 
 
  \end{enumerate}
-
-
+\newpage
 
 \section{Solucionari bloc II}
 \subsection{Solucions dels exercicis de la distribució normal}
@@ -705,9 +704,9 @@ Per a fer els següents exercicis et pots ajudar de les fórmules anteriors.
 
  \item Fem servir $N\cdot Ran\#+1$ i ens quedem només amb la part entera:
  \begin{itemize}
-  \item $250\cdot0{,}472+1=119{,}0$, per tant l'individu $119$.
-  \item $250\cdot0{,}081+1=21{,}25$, per tant l'individu $21$.
-  \item $250\cdot0{,}935+1=234{,}75$, per tant l'individu $234$.
+  \item $250\cdot0{,}472+1=119{,}0$, per tant, l'individu $119$.
+  \item $250\cdot0{,}081+1=21{,}25$, per tant, l'individu $21$.
+  \item $250\cdot0{,}935+1=234{,}75$, per tant, l'individu $234$.
  \end{itemize}
  Resposta: s'han seleccionat els individus $119$, $21$ i $234$.
 
@@ -754,7 +753,7 @@ Per a fer els següents exercicis et pots ajudar de les fórmules anteriors.
 \end{enumerate}
 
 
-\subsubsection{Solució de l'exercici de la proporció}
+\subsection{Solució de l'exercici de la proporció}
 $\hat{p}=\frac{85}{250}=0{,}34$, és a dir, el $34\%$ dels clients de la mostra estan satisfets. Aquest valor és l'estimació puntual de la proporció real $p$ de clients satisfets de tota la botiga: estimem que aproximadament un $34\%$ de tots els clients estan satisfets amb el servei.
 
 
@@ -855,7 +854,7 @@ $\hat{p}=\frac{85}{250}=0{,}34$, és a dir, el $34\%$ dels clients de la mostra 
 
  \item \textbf{Resolució oficial:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat. \textit{Proves d'accés a la universitat 2025. Matemàtiques aplicades a les ciències socials. Sèrie 0. Criteris de correcció}, exercici 3~\footnote{\url{https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/matematiques-cs/PAU_matesAplicades2025_0C.pdf}}.
 
- La mida de la mostra és $n=350$. L'estimació puntual de la proporció de persones que està a favor de la proposta és $$\hat{p}=\frac{218}{350}=0{,}6229$$.
+ La mida de la mostra és $n=350$. L'estimació puntual de la proporció de persones que està a favor de la proposta és $\hat{p}=\frac{218}{350}=0{,}6229$.
 
  L'estimació puntual de la proporció de persones a favor de la proposta és de $0{,}6229$, és a dir, un $62{,}29\%$.
 
@@ -865,6 +864,7 @@ $\hat{p}=\frac{85}{250}=0{,}34$, és a dir, el $34\%$ dels clients de la mostra 
  en què, si $Z$ segueix una distribució normal $(0,1)$, $P(-z_{\gamma}\leq Z\leq z_{\gamma})=\gamma$.
 
  Per tant, tenim que els extrems de l'interval són:
+
  $$\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}=0{,}6229-1{,}96\sqrt{\frac{0{,}6229(1-0{,}6229)}{350}}=0{,}5721$$
 
  i
