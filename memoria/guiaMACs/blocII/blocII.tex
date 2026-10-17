@@ -17,7 +17,7 @@ Doncs la distribució normal és el model matemàtic d’aquesta campana.
 \subsubsection{Definició i paràmetres}
 La distribució normal s’expressa com: $X \sim N(\mu, \sigma)$, on $\mu$ és la mitjana i $\sigma$ la desviació típica~\ref{desviació-típica}. Visualment, $\mu$ marca el centre de la campana, mentre que $\sigma$ determina l'amplada: com més gran és $\sigma$, més ampla és la campana i com més petita és, més estreta.
 
-La versió estàndard per mirar les probabilitats és quan $Z \sim N(0,1)$, perquè les taules de probabilitat estan fetes per a aquesta distribució. Tot i que, a les PAU de Catalunya no és necessari utilitzar aquestes taules, ja que en l’enunciat et donen directament la probabilitat. En algun exercici en concret en aquesta guia la utilitzarem per a què s'entengui millor.
+La versió estàndard per mirar les probabilitats és quan $Z \sim N(0,1)$, perquè les taules de probabilitat estan fetes per a aquesta distribució. A les PAU no et donen la taula de la normal: només alguns valors de referència (per exemple, $P(-1,96 \leq Z \leq 1,96) = 0,95$), i els exercicis estan pensats perquè només necessitis aquests. Tot i així, en aquesta guia fem servir la taula per entendre com funciona la distribució i per practicar la tipificació.
 
 En el cas que la variable no segueixi la distribució $N(0,1)$, es pot transformar en una distribució normal estàndard mitjançant la tipificació: $Z = \frac{X - \mu}{\sigma}$.
 
@@ -35,7 +35,7 @@ Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z<1,45)$.
 
 Resolució:
 La taula~\ref{tau-normal} de la dona directament l'àrea acumulada a l'esquerra de $Z \sim N(0,1)$ (la probabilitat que necessitem calcular). Només cal buscar la fila 1,4 i la columna 0,05 (per formar 1,45):
-$P(Z<1,45)=0.9265$
+$P(Z<1,45)=0,9265$
 No cal cap càlcul previ: la taula ja et dona la probabilitat acumulada fins a aquell valor.
 
 Exercici 2:
@@ -73,7 +73,7 @@ Enunciat: Les notes d'un examen d'una classe segueixen $X \sim N(65, 12)$. Calcu
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.7\textwidth]{./figures/Exercici_resolt_4.png}
-    \caption{Àrea corresponent a $P(X<80)$ sota la corba normal estàndard.}
+    \caption{Àrea corresponent a $P(X<80)$ sota la corba de $N(65, 12)$.}
 \end{figure}
 
 Resolució:
@@ -146,7 +146,7 @@ Resolució:
 \begin{enumerate}[(1)]
  \item Definir paràmetres i identificar la binomial: $n=200; p=0,08; q=1-0,08=0,92$ $X \sim B(200;\ 0,08)$
  \item Comprovar condicions: $np=16\geq3$, $nq=184\geq3$
- \item Calcular els paràmetres: $$\mu=16$$ $$\sigma=\sqrt{200 \cdot 0,08 \cdot 0,92}\approx 3,83$$
+ \item Calcular els paràmetres: $$\mu=16$$ $$\sigma=\sqrt{200 \cdot 0,08 \cdot 0,92}\approx 3,84$$
  \item Aplicar la correcció de continuïtat: com que volem $P(X\leq20)$, passem a $P(Y<20,5)$
  \item Tipificar: $Z=\frac{20,5-16}{3,83}\approx 1,17$
  \item Consultar la taula $N(0,1)$: $P(Z<1,17)\approx 0,8790$
@@ -543,7 +543,7 @@ Per a fer els següents exercicis et pots ajudar de les fórmules anteriors.
  Volem conèixer el percentatge de persones que parlen anglès en una població determinada. Prenem una mostra aleatòria de 500 persones de les quals resulta que 189 parlen anglès.
  \begin{enumerate}[a)]
   \item Doneu l'estimació puntual de la proporció i del percentatge de persones que parlen anglès en aquella població. (1 punt)
-  \item Escriviu un interval de confiança del 95\% per al percentatge de persones que parlen anglès en aquella població. (Recordeu que si $Z$ segueix una distribució Normal $(0,1)$, la $P(-1,96 \leq Z \leq 1,96) = 0,95$.) (1,5 punts)
+  \item Escriviu un interval de confiança del 95\% per al percentatge de persones que parlen anglès en aquella població. (Recordeu que si $Z$ segueix una distribució Normal $(0,1)$, la $P(-1,96 \leq Z \leq 1,96) = 0,95$). Fórmula per interval de confiança de la proporció: $$\left(\hat{p}-z_y\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}, \ \ \hat{p}+z_y\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right)$$ (1,5 punts)
  \end{enumerate}
 
  \item \textbf{Font:} \textit{Problemes d'exemple MACS 2025}\textsuperscript{\ref{macs-exemples}}, problema 5, p. 5-6.
@@ -554,7 +554,7 @@ Per a fer els següents exercicis et pots ajudar de les fórmules anteriors.
  $148,\ 149,\ 147,\ 146,\ 149,\ 146,\ 149,\ 148,\ 149,\ 149$
 
  \begin{enumerate}[a)]
-  \item Construïu un interval de confiança del 95\% per a la mitjana del pes dels iogurts, suposant que el pes segueix una distribució normal amb una desviació típica de 3 grams. (Recordeu que si $Z$ segueix una distribució Normal $(0,1)$, la $P(-1,96 \leq Z \leq 1,96) = 0,95$.) (1,5 punts)
+  \item Construïu un interval de confiança del 95\% per a la mitjana del pes dels iogurts, suposant que el pes segueix una distribució normal amb una desviació típica de 3 grams. (Recordeu que si $Z$ segueix una distribució Normal $(0,1)$, la $P(-1,96 \leq Z \leq 1,96) = 0,95$). Fórmula per interval de confiança de la mitjana: $$\left(\bar{x}-z_y\frac{\sigma}{\sqrt{n}},\ \ \bar{x}+z_y\frac{\sigma}{\sqrt{n}}\right)$$ (1,5 punts)
   \item A partir del resultat obtingut en l'apartat anterior podem afirmar que la informació que hi ha a l'etiqueta és errònia? Justifiqueu la resposta. (1 punt)
  \end{enumerate}
 
