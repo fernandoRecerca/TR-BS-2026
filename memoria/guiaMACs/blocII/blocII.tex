@@ -86,6 +86,7 @@ $P(X<80)=P(Z<1,25)=0,8944$
 Resposta: aproximadament el $89,44\%$ dels estudiants treuen menys de 80 punts.
 
 \subsubsection{Exercicis a resoldre de la distribució normal:}
+Necessitaràs la taula de la distribució normal~\ref{tau-normal} per resoldre aquests exercicis.
 \begin{enumerate}
  \item Si $Z \sim N(0, 1)$, calcula $P(Z<2,1)$.
  \item Si $Z \sim N(0, 1)$, calcula $P(Z>1,33)$.
@@ -97,7 +98,7 @@ Resposta: aproximadament el $89,44\%$ dels estudiants treuen menys de 80 punts.
  \item El temps de reacció d'un grup de conductors segueix $N(0,75, 0,12)$ segons. Quina probabilitat té un conductor que tingui un temps de reacció més gran de $0,9$ s?
  \item Les puntuacions d'un test segueixen $N(100,15)$. Quina proporció de persones obté una puntuació entre $85$ i $115$?
  \item Una variable $N(80,\sigma)$ compleix que $P(X<65)=0,05$. Calcula $\sigma$.
- \item PAU Catalunya, Matemàtiques Aplicades a les Ciències Socials, convocatòria ordinària de 2025, exercici 3a.
+ \item \textbf{Font:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat. \textit{Proves d'accés a la universitat 2025. Matemàtiques aplicades a les ciències socials. Convocatòria ordinària, sèrie 1}, exercici 3a\footnote{\url{https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques-aplicades-cc/ord/pau_macs25jl.pdf}}.
     Enunciat: Fa uns anys una granja de vaques frisones dedicada a la producció de llet va fer un estudi sobre el pes de les seves vaques i va arribar a la conclusió que aquesta variable seguia una distribució normal amb una mitjana de 580 kg i una desviació típica de 25 kg. Calculeu, de manera raonada, la probabilitat que si agafem a l’atzar una vaca frisona d’aquesta granja, el seu pes estigui entre 531 i 629 kg.
 \end{enumerate}
 
@@ -570,3 +571,305 @@ Per a fer els següents exercicis et pots ajudar de les fórmules anteriors.
 
  \end{enumerate}
 
+
+
+\section{Solucionari bloc II}
+\subsection{Solucions dels exercicis de la distribució normal}
+\begin{enumerate}
+ \item $P(Z<2{,}1)=0{,}9821$ (directe de la taula).
+
+ \item $P(Z>1{,}33)=1-P(Z<1{,}33)=1-0{,}9082=0{,}0918$.
+
+ \item $P(Z<-0{,}55)=1-P(Z<0{,}55)=1-0{,}7088=0{,}2912$.
+
+ \item Com que ens demanen un interval, restem dues àrees acumulades:
+ \begin{enumerate}[(1)]
+  \item $P(-2<Z<0{,}5)=P(Z<0{,}5)-P(Z<-2)$.
+  \item $P(Z<0{,}5)=0{,}6915$.
+  \item Per simetria, $P(Z<-2)=1-P(Z<2)=1-0{,}9772=0{,}0228$.
+  \item $P(-2<Z<0{,}5)=0{,}6915-0{,}0228=0{,}6687$.
+ \end{enumerate}
+ Resposta: $0{,}6687$.
+
+ \item Aquí fem el camí invers: coneixem la probabilitat i volem trobar $z$.
+ \begin{enumerate}[(1)]
+  \item Busquem a l'interior de la taula el valor $0{,}95$.
+  \item No hi apareix exactament: $0{,}9495$ correspon a $z=1{,}64$ i $0{,}9505$ a $z=1{,}65$.
+  \item El $0{,}95$ queda just enmig, per tant $z\approx1{,}645$.
+ \end{enumerate}
+ Resposta: $z\approx1{,}645$.
+
+ \item $z=\frac{47-40}{5}=1{,}4$, i $P(X<47)=P(Z<1{,}4)=0{,}9192$.
+
+ \item $z=\frac{100-120}{20}=-1$, i $P(X>100)=P(Z>-1)=P(Z<1)=0{,}8413$.
+
+ \item $z=\frac{0{,}9-0{,}75}{0{,}12}=1{,}25$, i $P(X>0{,}9)=1-P(Z<1{,}25)=1-0{,}8944=0{,}1056$. Aproximadament el $10{,}56\%$ dels conductors.
+
+ \item $z_1=\frac{85-100}{15}=-1$ i $z_2=\frac{115-100}{15}=1$. Llavors $P(-1<Z<1)=0{,}8413-0{,}1587=0{,}6826$. Aproximadament el $68{,}26\%$ de les persones.
+
+ \item Ara el que busquem és $\sigma$.
+ \begin{enumerate}[(1)]
+  \item Com que $P(X<65)=0{,}05$ és menor que $0{,}5$, el $65$ queda a l'esquerra de la mitjana i el valor de $z$ és negatiu.
+  \item La taula només té probabilitats superiors a $0{,}5$. Per simetria, $P(Z<z)=0{,}05$ equival a $P(Z<-z)=0{,}95$, que ja sabem que dóna $-z=1{,}645$. Per tant, $z=-1{,}645$.
+  \item Tipifiquem: $\frac{65-80}{\sigma}=-1{,}645$.
+  \item Aïllem: $\sigma=\frac{15}{1{,}645}\approx9{,}12$.
+ \end{enumerate}
+ Resposta: $\sigma\approx9{,}12$.
+
+ \item \textbf{Resolució oficial:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat. \textit{Proves d'accés a la universitat 2025. Matemàtiques aplicades a les ciències socials. Sèrie 0. Criteris de correcció}, exercici 3~\footnote{\url{https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques-aplicades-cc/ord/pau_macs25jp.pdf}}.
+
+ Anomenem $X$ la variable ``pes de la vaca''. Ens demanen que calculem la $P(531 \leq X \leq 629)$. Sabem que $X$ segueix una distribució normal de mitjana $\mu = 580$ i desviació típica $\sigma = 25$. Per tant, $Z = \frac{X-580}{25}$ segueix una distribució normal $\mathcal{N}(0,1)$. Aleshores,
+ $$P(531 \leq X \leq 629) = P\left(\frac{531-580}{25} \leq \frac{X-580}{25} \leq \frac{629-580}{25} \right) = P(-1{,}96 \leq Z \leq 1{,}96) = 0{,}95. $$
+
+ Per tant, la probabilitat que el pes de la vaca estigui entre aquests dos valors és de $0{,}95$.
+\end{enumerate}
+
+\subsection{Solucions dels exercicis de l'aproximació de la binomial per la normal}
+\begin{enumerate}
+ \item Comprovem les condicions: $np=150\cdot0{,}4=60\geq3$ i $nq=150\cdot0{,}6=90\geq3$. Per tant, l'aproximació és bona. Els paràmetres són:
+ $$\mu=np=60 \qquad \sigma=\sqrt{npq}=\sqrt{150\cdot0{,}4\cdot0{,}6}=\sqrt{36}=6$$
+ Resposta: $X\approx N(60, 6)$.
+
+ \item
+ \begin{enumerate}[(1)]
+  \item Condicions: $np=300\cdot0{,}25=75\geq3$ i $nq=300\cdot0{,}75=225\geq3$.
+  \item Paràmetres: $\mu=75$ i $\sigma=\sqrt{300\cdot0{,}25\cdot0{,}75}=\sqrt{56{,}25}=7{,}5$.
+  \item Correcció de continuïtat: $P(X\leq80)=P(Y<80{,}5)$.
+  \item Tipifiquem: $z=\frac{80{,}5-75}{7{,}5}\approx0{,}73$.
+  \item Taula: $P(Z<0{,}73)=0{,}7673$.
+ \end{enumerate}
+ Resposta: $0{,}7673$.
+
+ \item
+ \begin{enumerate}[(1)]
+  \item Condicions: $np=100\cdot0{,}5=50\geq3$ i $nq=50\geq3$.
+  \item Paràmetres: $\mu=50$ i $\sigma=\sqrt{100\cdot0{,}5\cdot0{,}5}=\sqrt{25}=5$.
+  \item Correcció de continuïtat: $P(X>55)=P(Y>55{,}5)$.
+  \item Tipifiquem: $z=\frac{55{,}5-50}{5}=1{,}1$.
+  \item Taula: $P(Z>1{,}1)=1-P(Z<1{,}1)=1-0{,}8643=0{,}1357$.
+ \end{enumerate}
+ Resposta: $0{,}1357$.
+
+ \item
+ \begin{enumerate}[(1)]
+  \item Condicions: $np=250\cdot0{,}6=150\geq3$ i $nq=250\cdot0{,}4=100\geq3$.
+  \item Paràmetres: $\mu=150$ i $\sigma=\sqrt{250\cdot0{,}6\cdot0{,}4}=\sqrt{60}\approx7{,}75$.
+  \item Correcció de continuïtat: $P(X=150)=P(149{,}5<Y<150{,}5)$.
+  \item Tipifiquem: $z_1=\frac{149{,}5-150}{7{,}75}\approx-0{,}06$ i $z_2=\frac{150{,}5-150}{7{,}75}\approx0{,}06$.
+  \item Taula: $P(-0{,}06<Z<0{,}06)=P(Z<0{,}06)-P(Z<-0{,}06)=2\cdot0{,}5239-1=0{,}0478$.
+ \end{enumerate}
+ Resposta: $0{,}0478$. Aquest exercici és molt sensible a l'arrodoniment de $z$: amb la calculadora, sense arrodonir, surt $0{,}0515$.
+
+ \item
+ \begin{enumerate}[(1)]
+  \item Dades: $n=180$, $p=0{,}65$ i $q=0{,}35$. Condicions: $np=117\geq3$ i $nq=63\geq3$.
+  \item Paràmetres: $\mu=117$ i $\sigma=\sqrt{180\cdot0{,}65\cdot0{,}35}=\sqrt{40{,}95}\approx6{,}40$.
+  \item Correcció de continuïtat: $P(X\leq110)=P(Y<110{,}5)$.
+  \item Tipifiquem: $z=\frac{110{,}5-117}{6{,}40}\approx-1{,}02$.
+  \item Taula: $P(Z<-1{,}02)=1-P(Z<1{,}02)=1-0{,}8461=0{,}1539$.
+ \end{enumerate}
+ Resposta: la probabilitat és aproximadament $0{,}1539$, és a dir, un $15{,}39\%$.
+
+ \item
+ \begin{enumerate}[(1)]
+  \item Dades: $n=400$, $p=0{,}12$ i $q=0{,}88$. Condicions: $np=48\geq3$ i $nq=352\geq3$.
+  \item Paràmetres: $\mu=48$ i $\sigma=\sqrt{400\cdot0{,}12\cdot0{,}88}=\sqrt{42{,}24}\approx6{,}50$.
+  \item Correcció de continuïtat: com que els dos extrems estan inclosos, $P(40\leq X\leq55)=P(39{,}5<Y<55{,}5)$.
+  \item Tipifiquem: $z_1=\frac{39{,}5-48}{6{,}50}\approx-1{,}31$ i $z_2=\frac{55{,}5-48}{6{,}50}\approx1{,}15$.
+  \item Taula: $P(-1{,}31<Z<1{,}15)=P(Z<1{,}15)-P(Z<-1{,}31)=0{,}8749-(1-0{,}9049)=0{,}8749-0{,}0951=0{,}7798$.
+ \end{enumerate}
+ Resposta: $0{,}7798$.
+
+ \item
+ \begin{enumerate}[(1)]
+  \item Dades: $n=120$, $p=0{,}3$ i $q=0{,}7$. Condicions: $np=36\geq3$ i $nq=84\geq3$.
+  \item Paràmetres: $\mu=36$ i $\sigma=\sqrt{120\cdot0{,}3\cdot0{,}7}=\sqrt{25{,}2}\approx5{,}02$.
+  \item Correcció de continuïtat: $P(X\geq30)=P(Y>29{,}5)$.
+  \item Tipifiquem: $z=\frac{29{,}5-36}{5{,}02}\approx-1{,}29$.
+  \item Taula: $P(Z>-1{,}29)=P(Z<1{,}29)=0{,}9015$.
+ \end{enumerate}
+ Resposta: la probabilitat és aproximadament $0{,}9015$, és a dir, un $90{,}15\%$.
+\end{enumerate}
+
+
+\subsection{Solucions dels exercicis de la introducció al mostreig estadístic}
+\begin{enumerate}
+ \item
+ \begin{itemize}
+  \item Població: els $900$ alumnes de l'institut.
+  \item Mostra: els $60$ alumnes a qui es pregunta.
+  \item Variable: nombre d'hores al dia que dediquen a mirar el mòbil.
+ \end{itemize}
+
+ \item No, la mostra no és representativa. Només es pregunta a persones que utilitzen la biblioteca actual, i és probable que estiguin més a favor d'obrir-ne una de nova que la resta del poble. A més, un dimarts al matí hi ha poca gent que treballa o estudia, de manera que molts habitants no tenen cap possibilitat de ser triats. La mostra no s'ha escollit a l'atzar, i això introdueix un biaix.
+
+ \item Fem servir $N\cdot Ran\#+1$ i ens quedem només amb la part entera:
+ \begin{itemize}
+  \item $250\cdot0{,}472+1=119{,}0$, per tant l'individu $119$.
+  \item $250\cdot0{,}081+1=21{,}25$, per tant l'individu $21$.
+  \item $250\cdot0{,}935+1=234{,}75$, per tant l'individu $234$.
+ \end{itemize}
+ Resposta: s'han seleccionat els individus $119$, $21$ i $234$.
+
+ \item
+ \begin{enumerate}[a)]
+  \item $h=\frac{N}{n}=\frac{1200}{48}=25$.
+  \item Els elements són $a_1=7$ i després se sumen $25$ cada vegada: $7,\ 32,\ 57,\ 82,\ 107$.
+  \item L'últim element és $a_{48}=7+25\cdot47=1182$.
+ \end{enumerate}
+
+ \item Com que la mostra és de $100$ persones sobre $1000$, la proporció és $\frac{100}{1000}=0{,}1$:
+ \begin{itemize}
+  \item Joves: $400\cdot0{,}1=40$.
+  \item Adults: $350\cdot0{,}1=35$.
+  \item Jubilats: $250\cdot0{,}1=25$.
+ \end{itemize}
+ Resposta: $40$ joves, $35$ adults i $25$ jubilats (en total $100$).
+
+ \item
+ \begin{enumerate}[a)]
+  \item El mostreig estratificat amb repartiment proporcional, perquè la població es pot dividir en estrats (els barris) i és raonable pensar que l'opinió sobre el transport públic depèn del barri on es viu (connexions, distàncies, freqüències\ldots).
+  \item Com que $\frac{400}{12\,000}=\frac{1}{30}$:
+  \begin{itemize}
+   \item Barri A: $\frac{4500}{30}=150$.
+   \item Barri B: $\frac{4200}{30}=140$.
+   \item Barri C: $\frac{3300}{30}=110$.
+  \end{itemize}
+  Resposta: $150$, $140$ i $110$ persones (en total $400$).
+ \end{enumerate}
+
+ \item
+ \begin{enumerate}[a)]
+  \item La població són els $5000$ clients de l'empresa i la mostra són els $300$ clients que han respost l'enquesta.
+  \item No, no és representativa, per dos motius. Només s'ha enquestat els clients que van comprar el mes passat, de manera que s'exclou la resta. A més, les respostes són voluntàries, i és habitual que responguin sobretot els clients més satisfets o els més descontents.
+  \item Es pot triar la mostra a l'atzar entre els $5000$ clients, amb un mostreig aleatori simple o, si es vol, estratificat segons la freqüència de compra. També convé insistir als clients triats perquè responguin, per reduir el biaix de les respostes voluntàries.
+ \end{enumerate}
+\end{enumerate}
+
+
+\subsection{Solució de l'exercici d'estimació puntual de la mitjana}
+\begin{enumerate}[a)]
+ \item $\bar{x}=\frac{62+70+65+80+74+68+71+70}{8}=\frac{560}{8}=70$ kg.
+ \item $\bar{x}$ estima la mitjana de la població, $\mu$, és a dir, el pes mitjà de tota la població de la qual s'han triat les $8$ persones. El valor obtingut, $70$ kg, és l'estimació puntual de $\mu$, i la mitjana de la mostra $\bar{x}$ n'és l'estimador.
+\end{enumerate}
+
+
+\subsubsection{Solució de l'exercici de la proporció}
+$\hat{p}=\frac{85}{250}=0{,}34$, és a dir, el $34\%$ dels clients de la mostra estan satisfets. Aquest valor és l'estimació puntual de la proporció real $p$ de clients satisfets de tota la botiga: estimem que aproximadament un $34\%$ de tots els clients estan satisfets amb el servei.
+
+
+\subsection{Solucions dels exercicis de desviació típica}
+\begin{enumerate}
+ \item
+ \begin{enumerate}[a)]
+  \item $\mu=\frac{3+5+6+8+8}{5}=\frac{30}{5}=6$.
+  \item Quadrats de les diferències respecte de la mitjana: $(3-6)^2+(5-6)^2+(6-6)^2+(8-6)^2+(8-6)^2=9+1+0+4+4=18$.
+
+  Variància: $\frac{18}{5}=3{,}6$.
+
+  Desviació típica: $\sigma=\sqrt{3{,}6}\approx1{,}90$.
+ \end{enumerate}
+ Resposta: la mitjana és $6$ i la desviació típica és aproximadament $1{,}90$. Si les cinc notes es consideren una mostra, es divideix entre $n-1=4$ i surt $s=\sqrt{\frac{18}{4}}\approx2{,}12$.
+
+ \item
+ \begin{itemize}
+  \item Mitjanes: $\mu_A=\frac{4+5+6+7+8}{5}=\frac{30}{5}=6$ i $\mu_B=\frac{2+4+6+8+10}{5}=\frac{30}{5}=6$. Les dues mitjanes són iguals.
+  \item Grup A: $(4-6)^2+(5-6)^2+(6-6)^2+(7-6)^2+(8-6)^2=4+1+0+1+4=10$. Variància: $\frac{10}{5}=2$. Desviació típica: $\sigma_A=\sqrt{2}\approx1{,}41$.
+  \item Grup B: $(2-6)^2+(4-6)^2+(6-6)^2+(8-6)^2+(10-6)^2=16+4+0+4+16=40$. Variància: $\frac{40}{5}=8$. Desviació típica: $\sigma_B=\sqrt{8}\approx2{,}83$.
+ \end{itemize}
+ Resposta: el grup B té les notes més disperses, perquè la seva desviació típica és més gran ($2{,}83>1{,}41$). Això vol dir que les notes del grup B s'allunyen més de la mitjana, mentre que les del grup A estan més concentrades al voltant del $6$.
+\end{enumerate}
+
+
+\subsection{Solucions dels exercicis dels intervals de confiança basats en la distribució normal}
+\begin{enumerate}
+ \item Busquem a la taula el valor $1-\frac{\alpha}{2}$ de cada nivell de confiança:
+ \begin{itemize}
+  \item $90\%$: $\alpha=0{,}10$ i $1-\frac{\alpha}{2}=0{,}95$. A la taula, $0{,}9495$ és $z=1{,}64$ i $0{,}9505$ és $z=1{,}65$, per tant $z_y\approx1{,}645$.
+  \item $95\%$: $\alpha=0{,}05$ i $1-\frac{\alpha}{2}=0{,}975$, que correspon a $z_y=1{,}96$.
+  \item $99\%$: $\alpha=0{,}01$ i $1-\frac{\alpha}{2}=0{,}995$. A la taula, $0{,}9949$ és $z=2{,}57$ i $0{,}9951$ és $z=2{,}58$, per tant $z_y\approx2{,}575$.
+ \end{itemize}
+
+ \item Dades: $\sigma=15$, $n=100$, $\bar{x}=120$ i $z_y=1{,}645$.
+
+ Marge: $1{,}645\cdot\frac{15}{\sqrt{100}}=1{,}645\cdot1{,}5=2{,}4675$.
+
+ Interval: $(120-2{,}4675;\ 120+2{,}4675)\approx(117{,}53;\ 122{,}47)$.
+
+ \item Dades: $\sigma=7$, $n=49$, $\bar{x}=26$ i $z_y=1{,}96$.
+
+ Marge: $1{,}96\cdot\frac{7}{\sqrt{49}}=1{,}96\cdot1=1{,}96$.
+
+ Interval: $(26-1{,}96;\ 26+1{,}96)=(24{,}04;\ 27{,}96)$ minuts.
+
+ \item L'interval és simètric al voltant de la mitjana de la mostra.
+ \begin{enumerate}[(1)]
+  \item Mitjana: $\bar{x}=\frac{97{,}06+102{,}94}{2}=100$.
+  \item Marge: $\frac{102{,}94-97{,}06}{2}=2{,}94$.
+  \item Com que el marge és $z_y\cdot\frac{\sigma}{\sqrt{n}}=z_y\cdot\frac{15}{10}=1{,}5\,z_y$, tenim $z_y=\frac{2{,}94}{1{,}5}=1{,}96$.
+  \item Aquest valor correspon a un nivell de confiança del $95\%$.
+ \end{enumerate}
+ Resposta: $\bar{x}=100$ i nivell de confiança del $95\%$.
+
+ \item
+ \begin{enumerate}[a)]
+  \item Falsa. L'interval es refereix a la mitjana de la població, no als alumnes un per un. Un alumne concret pot estudiar moltes més o moltes menys hores.
+  \item Vertadera. Aquesta és la interpretació correcta del nivell de confiança.
+  \item Vertadera. El $95\%$ és la proporció d'intervals, construïts amb mostres diferents, que contenen la mitjana real.
+ \end{enumerate}
+
+ \item Dades: $\sigma=1{,}5$, $n=36$, $\bar{x}=14{,}2$ i $z_y=1{,}96$.
+
+ Marge: $1{,}96\cdot\frac{1{,}5}{\sqrt{36}}=1{,}96\cdot0{,}25=0{,}49$.
+
+ Interval: $(14{,}2-0{,}49;\ 14{,}2+0{,}49)=(13{,}71;\ 14{,}69)$ hores.
+
+ \item
+ \begin{enumerate}[a)]
+  \item $\hat{p}=\frac{120}{400}=0{,}3$.
+  \item Marge: $1{,}96\sqrt{\frac{0{,}3\cdot0{,}7}{400}}\approx0{,}045$.
+
+  Interval: $(0{,}3-0{,}045;\ 0{,}3+0{,}045)=(0{,}255;\ 0{,}345)$.
+  \item En percentatges: $(25{,}5\%;\ 34{,}5\%)$.
+ \end{enumerate}
+
+ \item
+ \begin{enumerate}[a)]
+  \item Estimació puntual de la proporció: $\hat{p}=\frac{189}{500}=0{,}378$. Estimació puntual del percentatge: $37{,}8\%$.
+  \item Marge: $1{,}96\sqrt{\frac{0{,}378\cdot0{,}622}{500}}\approx0{,}0425$.
+
+  Interval per a la proporció: $(0{,}378-0{,}0425;\ 0{,}378+0{,}0425)=(0{,}3355;\ 0{,}4205)$.
+
+  Per al percentatge: $(33{,}55\%;\ 42{,}05\%)$.
+ \end{enumerate}
+
+ \item
+ \begin{enumerate}[a)]
+  \item Mitjana de la mostra: $\bar{x}=\frac{148+149+147+146+149+146+149+148+149+149}{10}=\frac{1480}{10}=148$. Com que la població és normal amb $\sigma=3$ coneguda, fem servir l'interval per a la mitjana amb $\sigma$ coneguda:
+
+  Marge: $1{,}96\cdot\frac{3}{\sqrt{10}}\approx1{,}86$.
+
+  Interval: $(148-1{,}86;\ 148+1{,}86)=(146{,}14;\ 149{,}86)$ grams.
+  \item No es pot afirmar que la informació de l'etiqueta sigui errònia, perquè els $150$ grams de l'etiqueta cauen dins de l'interval. Amb un $95\%$ de confiança, la mitjana real pot ser $150$.
+ \end{enumerate}
+
+ \item \textbf{Resolució oficial:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat. \textit{Proves d'accés a la universitat 2025. Matemàtiques aplicades a les ciències socials. Sèrie 0. Criteris de correcció}, exercici 3~\footnote{\url{https://universitats.gencat.cat/web/.content/01_acces_i_admissio/proves-acces-PAU-PAP/ambits/matematiques-cs/PAU_matesAplicades2025_0C.pdf}}.
+
+ La mida de la mostra és $n=350$. L'estimació puntual de la proporció de persones que està a favor de la proposta és $$\hat{p}=\frac{218}{350}=0{,}6229$$.
+
+ L'estimació puntual de la proporció de persones a favor de la proposta és de $0{,}6229$, és a dir, un $62{,}29\%$.
+
+ Quan la mida de la mostra és gran, l'interval de confiança per a una proporció amb un nivell de confiança $\gamma\in(0,1)$ s'obté a partir de la fórmula:
+ $$\left[\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}, \hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}} \right],$$
+
+ en què, si $Z$ segueix una distribució normal $(0,1)$, $P(-z_{\gamma}\leq Z\leq z_{\gamma})=\gamma$.
+
+ Per tant, tenim que els extrems de l'interval són:
+ $$\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}=0{,}6229-1{,}96\sqrt{\frac{0{,}6229(1-0{,}6229)}{350}}=0{,}5721$$
+
+ i
+
+ $$\hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}=0{,}6229+1{,}96\sqrt{\frac{0{,}6229(1-0{,}6229)}{350}}=0{,}6737.$$
+
+L'interval de confiança demanat és $[57{,}21\%,\,67{,}37\%]$, és a dir, el percentatge de persones que està a favor de la proposta està entre el $57{,}21\%$ i el $67{,}37\%$, amb una confiança del $95\%$.
+\end{enumerate}
