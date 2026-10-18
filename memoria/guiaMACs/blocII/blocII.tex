@@ -35,7 +35,7 @@ Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z<1,45)$.
 \end{figure}
 
 Resolució:
-La taula~\ref{tau-normal} de la dona directament l'àrea acumulada a l'esquerra de $Z \sim N(0,1)$ (la probabilitat que necessitem calcular). Només cal buscar la fila 1,4 i la columna 0,05 (per formar-ne 1,45):
+La taula~\ref{tau-normal} ens dona directament l'àrea acumulada a l'esquerra de $Z \sim N(0,1)$ (la probabilitat que necessitem calcular). Només cal buscar la fila 1,4 i la columna 0,05 (per formar-ne 1,45):
 $P(Z<1,45)=0,9265$
 No cal cap càlcul previ: la taula ja et dona la probabilitat acumulada fins a aquell valor.
 
@@ -50,7 +50,7 @@ Enunciat: Si $Z \sim N(0,1)$, calcula $P(Z>0,8)$.
 Resolució:
 La taula només dona probabilitats acumulades "menys que". Com que tota l'àrea sota la corba val 1:
 $P(Z>0,8)=1-P(Z<0,8)=1-0,7881=0,2119$
-Idea clau: sempre que et demanin ``més gran que'', passeu a ``1 menys la probabilitat de la taula''.
+Idea clau: sempre que et demanin ``més gran que'', passa a ``1 menys la probabilitat de la taula''.
 
 Exercici 3:
 Enunciat: Si $Z \sim N(0,1)$, calcula $P(-1<Z<1,5)$.
@@ -106,7 +106,7 @@ Necessitaràs la taula de la distribució normal~\ref{tau-normal} per resoldre a
 
 
 \subsection{Aproximació de la binomial per la normal}
-\subsubsection{Perquè aproximar-la}
+\subsubsection{Per què aproximar-la}
 Quan $n$ és gran, calcular probabilitats amb la fórmula de la binomial es torna molt feixuc (combinatòries enormes). Per evitar fer càlculs enormes aproximem la binomial per una distribució normal, que és contínua i molt més fàcil de treballar amb taules.
 
 
@@ -114,7 +114,7 @@ Quan $n$ és gran, calcular probabilitats amb la fórmula de la binomial es torn
 En el llibre de MACS II~\cite{Llibre_MACS_II} a la pàgina 320 explica que:
 \emph{Una distribució binomial s'assembla més a una de normal com més gran és el producte $np$ (o $nq$ si $q<p$)} ($q=1-p$).
 
-\emph{Quan $np$ i $nq$ són més grans que 3, l'aproximació és bastant bona. I si són més grans que 5, l'aproximació és gairebé perfecta. D'ara endavant considerarem el valor 3 com a referent per dona validesa a aquesta aproximació.
+\emph{Quan $np$ i $nq$ són més grans que 3, l'aproximació és bastant bona. I si són més grans que 5, l'aproximació és gairebé perfecta. D'ara endavant considerarem el valor 3 com a referent per donar validesa a aquesta aproximació.
 Naturalment, la corba normal a la qual s'aproxima la $B(n, p)$ té la mateixa mitjana, $\mu = n \cdot p$, i la mateixa desviació típica, $\sigma = \sqrt{n \cdot p \cdot q}$:
 $B(n, p) \approx N(n \cdot p, \sqrt{n \cdot p \cdot q})$
 En l'aproximació d'ambdues distribucions cal tenir en compte que la binomial és discreta i la normal, contínua.}
@@ -217,7 +217,7 @@ Exercici resolt:
 \end{enumerate}
 
 \begin{enumerate}[a)]
- \item Es tria aleatòriament 100 nombres d'entre els 1300. La mostra estarà formada pels 100 alumnes a qui corresponguin aquests nombres.
+ \item Es trien aleatòriament 100 nombres d'entre els 1300. La mostra estarà formada pels 100 alumnes a qui corresponguin aquests nombres.
 
  \item coeficient d'elevació: $h = \frac{1300}{100} = 13$
     -Es tria aleatòriament un nombre de l'1 al 13. Suposem que surt el 5.
@@ -352,7 +352,7 @@ S'han pesat $8$ persones triades a l'atzar d'una població i s'han obtingut els 
  \end{enumerate}
 
 \subsection{Proporció}
-\subsubsection{Que és la proporció}
+\subsubsection{Què és la proporció}
 La proporció ($p$) és la fracció del nombre d'individus que tenen una característica concreta entre la població o mostra:
 
 $$p = \frac{\mbox{individus amb la característica}}{\mbox{total}}$$
@@ -371,13 +371,13 @@ Tenim una mostra de 200 peces, 16 són defectuoses. Llavors $\hat p = \frac{16}{
 En una enquesta de satisfacció a $250$ clients d'una botiga, $85$ afirmen estar satisfets amb el servei. Calcula la proporció de clients satisfets a la mostra i explica quin valor de la població estima.
 
 \subsection{Desviació típica}
-\subsubsection{Que és la desviació típica}
+\subsubsection{Què és la desviació típica}
 \label{desviació-típica}
-La desviació típica ($\sigma$) mesura com estan de dispersos els valors de la mitjana. Si és petita, els valors estaran a prop de la mitjana, si és gran estaran més allunyats.
+La desviació típica ($\sigma$) mesura com estan de dispersos els valors respecte de la mitjana. Si és petita, els valors estaran a prop de la mitjana, si és gran estaran més allunyats.
 
 $$\sigma = \sqrt{\frac{\sum (x_i - \mu)^2}{N}}$$
 
-És la arrel quadrada de la variància ($\sqrt{\mbox{variància}} = \mbox{desviació típica}$).
+És l'arrel quadrada de la variància ($\sqrt{\mbox{variància}} = \mbox{desviació típica}$).
 
 Exemple: dades $2, 4, 4, 4, 5, 5, 7, 9$.
 
@@ -413,8 +413,8 @@ $$s = \sqrt{\frac{\sum (x_i - \bar{x})^2}{n-1}}$$
 \end{enumerate}
 
 \subsection{Intervals de confiança basats en la distribució normal}
-\subsubsection{Que són els intervals de confiança basats en la distribució normal}
-L'estimació puntual ens dona un sol valor, el valor de la mitjana, $\mu$, és aproximadament el de la mitjana de la mostra, $\bar x$, però és gairebé impossible que coincideixi exactament amb $\mu$. Un \textbf{interval de confiança} dona un rang de valors en el que creiem que està el paràmetre real de la població (en aquest cas $\mu$), amb un \textbf{cert nivell de confiança}.
+\subsubsection{Què són els intervals de confiança basats en la distribució normal}
+L'estimació puntual ens dona un sol valor, el valor de la mitjana, $\mu$, és aproximadament el de la mitjana de la mostra, $\bar x$, però és gairebé impossible que coincideixi exactament amb $\mu$. Un \textbf{interval de confiança} dona un rang de valors en què creiem que està el paràmetre real de la població (en aquest cas $\mu$), amb un \textbf{cert nivell de confiança}.
 
 \subsubsection{Definicions}
 \begin{itemize}
