@@ -572,6 +572,100 @@ Per a fer els següents exercicis et pots ajudar de les fórmules anteriors.
  \end{enumerate}
 \newpage
 
+\section{Problemes de les PAU}
+En aquest apartat trobaràs exercicis de probabilitat i estadística de les PAU d'anys anteriors. Cada exercici combina diversos, tal com passarà a la prova real.
+\begin{enumerate}
+ \item \textbf{Font:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat \footnote{\url{https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques-aplicades-cc/ord/pau_macs25jl_tei.pdf}}. \textit{Proves d'accés a la universitat 2025. Matemàtiques aplicades a les ciències socials. Sèrie 4}, exercici 2.
+
+ \textbf{Exercici 2}
+
+ Una empresa fabrica bicicletes convencionals i elèctriques. El responsable de qualitat de l'empresa ha mirat l'historial de vendes i ha calculat que el $5\,\%$ de les bicicletes convencionals havien tingut algun tipus de problema que n'havia requerit una revisió postvenda. En el cas de les bicicletes elèctriques, aquest percentatge era del $15\,\%$. Actualment, el $25\,\%$ de la producció és de bicicletes convencionals i el $75\,\%$, de bicicletes elèctriques.
+ \begin{enumerate}[a)]
+ \item Si escollim una bicicleta a l'atzar, quina és la probabilitat que tingui algun tipus de problema que requereixi una revisió postvenda? Si la bicicleta escollida a l'atzar presenta algun tipus de problema que requereixi una revisió postvenda, quina és la probabilitat que sigui elèctrica? (1,25 punts)
+ \item El responsable de qualitat creu que la dada segons la qual un $15\,\%$ de bicicletes elèctriques tenen algun problema que requereix el servei postvenda ha quedat desfasada. Considera que actualment tant la tecnologia com els controls de qualitat previs han millorat molt i aquesta proporció ha disminuït. Per a comprovar-ho, pren una mostra de 100 bicicletes elèctriques que ha venut en els darrers mesos i observa que només 8 han requerit una revisió postvenda.
+
+ A partir d'aquestes dades, trobeu un interval de confiança del $95\,\%$ per a la proporció de bicicletes elèctriques que tenen algun problema i requereixen una revisió postvenda. A partir del resultat obtingut, podem afirmar que aquesta proporció ha disminuït? (1,25 punts)
+
+ \textbf{Fórmules per a resoldre l'exercici:}
+ \begin{itemize}
+  \item $Z \sim \mbox{normal}(0,1) \rightarrow P(-1{,}96 \leq Z \leq 1{,}96) = 0{,}95$ i $P(-2{,}58 \leq Z \leq 2{,}58) = 0{,}99$
+  \item Intervals de confiança amb un nivell de confiança $\gamma \in (0,1)$
+  \begin{itemize}
+   \item [---] per a la proporció (mostres grans):
+   $$\left[\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}},\ \hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right]$$
+   \item[---] per a la mitjana (mostres normals amb la variància $\sigma^2$ coneguda):
+   $$\left[\bar{x}-z_{\gamma}\frac{\sigma}{\sqrt{n}},\ \bar{x}+z_{\gamma}\frac{\sigma}{\sqrt{n}}\right]$$
+   \item[---] per a la mitjana (mostres grans amb la variància $\sigma^2$ desconeguda):
+   $$\left[\bar{x}-z_{\gamma}\frac{s}{\sqrt{n}},\ \bar{x}+z_{\gamma}\frac{s}{\sqrt{n}}\right]$$
+  \end{itemize}
+
+ \end{itemize}
+ \end{enumerate}
+\vspace{2cm}
+
+ \item \textbf{Font:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat \footnote{\url{https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques-aplicades-cc/ord/pau_macs24jl.pdf}}. \textit{Proves d'accés a la universitat 2024. Matemàtiques aplicades a les ciències socials. Sèrie 1}, exercici 6.
+
+ \textbf{Exercici 6}
+
+ Volem saber el percentatge de persones que estarien a favor de la construcció d'un poliesportiu municipal en una població determinada. Prenem una mostra aleatòria de 350 persones, 218 de les quals es manifesten a favor de la proposta i la resta, en contra.
+ \begin{enumerate}[a)]
+ \item Doneu l'estimació puntual de la proporció i del percentatge de persones que estan a favor de la construcció del poliesportiu. (1 punt)
+ \item Escriviu un interval de confiança del $95\,\%$ per al percentatge de persones que estan a favor de la construcció del poliesportiu en aquesta població. \textsc{Nota:} Recordeu que, si $Z$ segueix una distribució normal $(0,1)$, $P(-1{,}96 \leq Z \leq 1{,}96) = 0{,}95$. Recordeu també que, per a mostres grans, l'interval de confiança per a una proporció amb un nivell de confiança $\gamma \in (0,1)$ és donat per $$\left[\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}},\ \hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right].$$ (1,5 punts)
+
+\end{enumerate}
+\vspace{2cm}
+
+\item \textbf{Font:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat \footnote{\url{https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/matematiques-aplicades-cc/ext/pau_macs26sl.pdf}}. \textit{Proves d'accés a la universitat 2026. Matemàtiques aplicades a les ciències socials. Sèrie 2}, exercici 3.
+
+\textbf{Exercici 3} \hfill [2,5 punts en total]
+
+En una assignatura d'un màster de dos anys, el $70\,\%$ dels estudiants són de primer curs i la resta són de segon curs. Segons dades de cursos anteriors, la probabilitat d'aprovar l'assignatura és del $60\,\%$ per als estudiants de primer curs i del $85\,\%$ per als de segon curs.
+
+\textbf{Fórmules per a resoldre l'exercici:}
+\begin{itemize}
+ \item $Z \sim \mbox{normal}(0,1) \rightarrow P(-1{,}96 \leq Z \leq 1{,}96) = 0{,}95$ i $P(-2{,}58 \leq Z \leq 2{,}58) = 0{,}99$
+ \item Intervals de confiança amb un nivell de confiança $\gamma \in (0,1)$
+ \begin{itemize}
+  \item[---] per a la proporció (mostres grans):
+  $$\left[\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}},\ \hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right]$$
+  \item[---] per a la mitjana (mostres normals amb la variància $\sigma^2$ coneguda):
+  $$\left[\bar{x}-z_{\gamma}\frac{\sigma}{\sqrt{n}},\ \bar{x}+z_{\gamma}\frac{\sigma}{\sqrt{n}}\right]$$
+  \item[---] per a la mitjana (mostres grans amb la variància $\sigma^2$ desconeguda):
+  $$\left[\bar{x}-z_{\gamma}\frac{s}{\sqrt{n}},\ \bar{x}+z_{\gamma}\frac{s}{\sqrt{n}}\right]$$
+ \end{itemize}
+\end{itemize}
+\vspace{2cm}
+
+\begin{enumerate}[3.1.]
+ \item Si escollim un estudiant a l'atzar, quina és la probabilitat que aprovi l'assignatura? Si sabem que un estudiant ha aprovat l'assignatura, quina és la probabilitat que sigui de primer curs? (1,25 punts)
+ \item El professor vol estimar la nova proporció d'estudiants que aproven l'assignatura després d'introduir un nou mètode d'ensenyament. Per fer-ho, selecciona una mostra aleatòria de $n = 80$ estudiants i observa que 55 d'ells han aprovat.
+
+ Trobeu un interval de confiança del $95\,\%$ per a la proporció $p$ d'aprovats amb el nou mètode. L'interval obtingut permet afirmar que el nou mètode ha millorat la taxa d'aprovats respecte de la situació anterior? Raoneu la resposta. (1,25 punts)
+\end{enumerate}
+
+\item \textbf{Font:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat \footnote{\url{https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques-aplicades-cc/ord/pau_macs24jl_tei.pdf}}. \textit{Proves d'accés a la universitat 2024. Matemàtiques aplicades a les ciències socials. Sèrie 5}, exercici 6.
+
+\textbf{Exercici 6}
+
+Es vol saber el temps mitjà, en minuts, que l'alumnat d'un institut passa diàriament connectat a una xarxa social determinada. S'ha seleccionat una mostra de 175 estudiants i se'ls ha demanat aquesta dada. En aquesta mostra s'ha obtingut una mitjana de 90 minuts, amb una desviació típica de 7 minuts.
+
+\textsc{Nota:} Per a resoldre aquest problema, recordeu que, si $Z$ segueix una distribució normal $(0,1)$, $P(-1{,}96 \leq Z \leq 1{,}96) = 0{,}95$ i $P(-2{,}58 \leq Z \leq 2{,}58) = 0{,}99$. Recordeu també que l'interval de confiança per a la mitjana amb un nivell de confiança $\gamma \in (0,1)$ quan la variància $\sigma^2$ és desconeguda i la mostra és gran és donat per $$\left[\bar{x}-z_{\gamma}\frac{s}{\sqrt{n}},\ \bar{x}+z_{\gamma}\frac{s}{\sqrt{n}}\right].$$
+
+\begin{enumerate}[a)]
+ \item Construïu un interval de confiança del $95\,\%$ per al temps mitjà que l'alumnat passa diàriament connectat a aquesta xarxa social. (1 punt)
+  \item Construïu un interval de confiança del $99\,\%$ per al temps mitjà que l'alumnat passa diàriament connectat a aquesta xarxa social. Expliqueu per què aquest interval i el de l'apartat anterior són diferents i quina informació ens dona exactament cada un. (1,5 punts)
+\end{enumerate}
+
+
+ \end{enumerate}
+
+
+
+
+
+
+\newpage
+
 \section{Solucionari bloc II}
 \subsection{Solucions dels exercicis de la distribució normal}
 \begin{enumerate}
@@ -872,4 +966,150 @@ $\hat{p}=\frac{85}{250}=0{,}34$, és a dir, el $34\%$ dels clients de la mostra 
  $$\hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}=0{,}6229+1{,}96\sqrt{\frac{0{,}6229(1-0{,}6229)}{350}}=0{,}6737.$$
 
 L'interval de confiança demanat és $[57{,}21\%,\,67{,}37\%]$, és a dir, el percentatge de persones que està a favor de la proposta està entre el $57{,}21\%$ i el $67{,}37\%$, amb una confiança del $95\%$.
+\end{enumerate}
+
+\subsection{Solucionari de problemes de les PAU}
+\begin{enumerate}
+ \item \textbf{Resolució oficial:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat. \textit{Proves d'accés a la universitat 2025. Matemàtiques aplicades a les ciències socials. Sèrie 4. Criteris de correcció}, exercici 2~\footnote{\url{https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2025/matematiques-aplicades-cc/ord/pau_macs25jp_tei.pdf}}.
+
+ \begin{enumerate}[a)]
+ \item Considerem els esdeveniments:
+ \begin{itemize}
+  \item[] $D$ = la bicicleta té algun tipus de problema que requereix del servei postvenda.
+  \item[] $M$ = la bicicleta és manual.
+  \item[] $E$ = la bicicleta és elèctrica.
+ \end{itemize}
+
+ De l'enunciat del problema sabem que $P(M)=0{,}25$ i $P(E)=0{,}75$. Sabem també que $P(D|M)=0{,}05$ i $P(D|E)=0{,}15$.
+
+ Aleshores, per la fórmula de les probabilitats totals,
+ $$P(D)=P(D\cap M)+P(D\cap E)=P(M)\cdot P(D|M)+P(E)\cdot P(D|E)=0{,}25\cdot0{,}05+0{,}75\cdot0{,}15=\frac{1}{8}=0{,}125.$$
+
+
+ Així doncs, la probabilitat que la bicicleta tingui algun tipus de problema que requereixi el servei postvenda és de $0{,}125$.
+
+ Ara ens demanen que calculem la probabilitat que la bicicleta sigui elèctrica si sabem que ha tingut algun tipus de problema que ha requerit el servei postvenda. Per tant,
+ $$P(E|D)=\frac{P(E\cap D)}{P(D)}=\frac{P(E)\cdot P(D|E)}{P(D)}=\frac{0{,}75\cdot0{,}15}{0{,}125}=\frac{9}{10}=0{,}9.$$
+
+ Si sabem que la bicicleta ha tingut algun tipus de problema que ha requerit el servei postvenda, la probabilitat que es tracti d'una bicicleta elèctrica és de $0{,}9$.
+
+ \item La mida de la mostra és $n=100$. L'estimació puntual de la proporció de bicicletes que han requerit la revisió del servei postvenda és de $\hat{p}=\frac{8}{100}=0{,}08$.
+
+ Quan la mida de la mostra és gran, l'interval de confiança per a una proporció amb un nivell de confiança $\gamma\in(0,1)$ s'obté a partir de la fórmula  $$\left[\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}},\ \hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right],$$
+
+ en què, si $Z$ segueix una distribució normal $(0,1)$, $P(-z_{\gamma}\leq Z\leq z_{\gamma})=\gamma$. Per tant tenim que els extrems de l'interval són
+
+ $$\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}=0{,}08-1{,}96\sqrt{\frac{0{,}08(1-0{,}08)}{100}}=0{,}0268$$
+
+ i
+
+ $$\hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}=0{,}08+1{,}96\sqrt{\frac{0{,}08(1-0{,}08)}{100}}=0{,}1332.$$
+
+ L'interval de confiança demanat és $[0{,}0268;\ 0{,}1332]$. Per tant, amb una confiança del $95\,\%$ sí que podem afirmar que el percentatge ha millorat respecte de l'històric del $15\,\%$. Sabem que, actualment, el percentatge de bicicletes elèctriques que requereixen del servei postvenda està entre el $2{,}6\,\%$ i el $13{,}3\,\%$ amb una confiança del $95\,\%$.
+\end{enumerate}
+\item \textbf{Resolució oficial:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat. \textit{Proves d'accés a la universitat 2024. Matemàtiques aplicades a les ciències socials. Sèrie 1. Criteris de correcció}, exercici 6~\footnote{\url{https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques-aplicades-cc/ord/pau_macs24jp.pdf}}.
+\begin{enumerate}[a)]
+ \item La mida de la mostra és $n=350$. L'estimació puntual de la proporció de persones que està a favor de la proposta és
+ $$\hat{p}=\frac{218}{350}=0{,}6229.$$
+
+ L'estimació puntual de la proporció de persones a favor de la proposta és de $0{,}6229$, és a dir, un $62{,}29\,\%$.
+
+ \item Quan la mida de la mostra és gran, l'interval de confiança per a una proporció amb un nivell de confiança $\gamma\in(0,1)$ s'obté a partir de la fórmula
+ $$\left[\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}},\ \hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right],$$
+
+ en què, si $Z$ segueix una distribució normal $(0,1)$, $P(-z_{\gamma}\leq Z\leq z_{\gamma})=\gamma$. Per tant tenim que els extrems de l'interval són
+
+ $$\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}=0{,}6229-1{,}96\sqrt{\frac{0{,}6229(1-0{,}6229)}{350}}=0{,}5721$$
+
+ i
+
+ $$\hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}=0{,}6229+1{,}96\sqrt{\frac{0{,}6229(1-0{,}6229)}{350}}=0{,}6737.$$
+
+ L'interval de confiança demanat és $[57{,}21\,\%;\ 67{,}37\,\%]$, és a dir, el percentatge de persones que està a favor de la proposta està entre el $57{,}21\,\%$ i el $67{,}37\,\%$ amb una confiança del $95\,\%$.
+\end{enumerate}
+
+\item \textbf{Resolució oficial:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat. \textit{Proves d'accés a la universitat 2026. Matemàtiques aplicades a les ciències socials. Sèrie 2. Criteris de correcció}, exercici 3~\footnote{\url{https://universitats.gencat.cat/web/.content/06_pau/examens-correccions/2026/matematiques-aplicades-cc/ext/pau_macs26st.pdf}}.
+
+\begin{enumerate}[a)]
+ \item Considerem els esdeveniments:
+ \begin{itemize}
+  \item[] $P_1$ = l'estudiant és de primer any.
+  \item[] $P_2$ = l'estudiant és de segon any.
+  \item[] $A$ = l'estudiant aprova l'assignatura.
+ \end{itemize}
+
+ A partir de l'enunciat, sabem les probabilitats següents:
+ $$P(P_1)=0{,}70,\quad P(P_2)=1-0{,}70=0{,}30$$
+ $$P(A|P_1)=0{,}60,\quad P(A|P_2)=0{,}85$$
+
+ Per a calcular la probabilitat que un estudiant escollit a l'atzar aprovi, utilitzem el teorema de les probabilitats totals:
+ $$P(A)=P(A\cap P_1)+P(A\cap P_2)=P(A|P_1)P(P_1)+P(A|P_2)P(P_2)$$
+ $$=(0{,}60\times0{,}70)+(0{,}85\times0{,}30)=0{,}42+0{,}255=0{,}675$$
+
+ Per tant, la probabilitat que un estudiant escollit a l'atzar aprovi l'assignatura és de $0{,}675$.
+
+
+ Ara hem de calcular quina és la probabilitat que un estudiant sigui de primer curs, si sabem que ha aprovat l'assignatura. Utilitzarem el teorema de Bayes:
+ $$P(P_1|A)=\frac{P(A|P_1)P(P_1)}{P(A)}=\frac{0{,}60\times0{,}70}{0{,}675}=\frac{0{,}42}{0{,}675}=\frac{28}{45}\approx0{,}6222$$
+
+ Per tant, la probabilitat que un estudiant que ha aprovat l'assignatura sigui de primer any és aproximadament de $0{,}6222$.
+
+ \item Sabem que l'interval de confiança amb un nivell de confiança $\gamma\in(0,1)$ per a la proporció, quan la mida de la mostra és gran, és donat per
+ $$\left[\hat{p}-z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}},\ \hat{p}+z_{\gamma}\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right]$$
+
+ Tenim les dades següents:
+
+ Mida mostral: $n=80$
+
+ Nombre d'èxits (aprovats): $x=55$
+
+ Proporció mostral: $\hat{p}=\frac{x}{n}=\frac{55}{80}=0{,}6875$
+
+ Nivell de confiança: $\gamma=0{,}95 \Rightarrow z_{\gamma}=1{,}96$
+
+ Calculem
+ $$1{,}96\cdot\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}=1{,}96\cdot\sqrt{\frac{0{,}6875\times0{,}3125}{80}}\approx0{,}1016.$$
+
+ Per tant, l'interval de confiança del $95\,\%$ és
+ $$[0{,}6875-0{,}1016;\ 0{,}6875+0{,}1016]=[0{,}5859;\ 0{,}7891].$$
+
+ L'interval de confiança del $95\,\%$ per a la proporció d'aprovats, després d'aplicar el nou mètode, és $[0{,}586;\ 0{,}789]$, és a dir, el percentatge d'aprovats després d'aplicar el mètode està entre el $58{,}6\,\%$ i el $78{,}9\,\%$ amb una confiança del $95\,\%$.
+
+ Segons el que hem calculat a l'apartat anterior, la proporció d'aprovats abans del nou mètode era de $0{,}675$; és a dir, aprovava un percentatge del $67{,}5\,\%$. L'interval de confiança obtingut $[0{,}586;\ 0{,}789]$ inclou el valor $0{,}675$; per tant, amb un nivell de confiança del $95\,\%$ no podem afirmar que el nou mètode hagi millorat la taxa d'aprovats.
+
+\end{enumerate}
+
+\item \textbf{Resolució oficial:} Generalitat de Catalunya, Consell Interuniversitari de Catalunya, Oficina d'Accés a la Universitat. \textit{Proves d'accés a la universitat 2024. Matemàtiques aplicades a les ciències socials. Sèrie 5. Criteris de correcció}, exercici 6~\footnote{\url{https://universitats.gencat.cat/web/.content/06_pau/models-examen-anys-anteriors/examens-2024/matematiques-aplicades-cc/ord/pau_macs24jp_tei.pdf}}.
+
+\begin{enumerate}[a)]
+ \item Tenim una mostra de mida $n=175$. Sabem que l'estimació puntual de la mitjana a partir de la mostra és $\bar{x}=90$ i que la desviació típica mostral és $s=7$.
+
+ L'interval de confiança per a la mitjana amb un nivell de confiança $\gamma\in(0,1)$, quan la variància $\sigma^2$ és desconeguda i la mostra és gran ($n\geq30$) s'obté a partir de la fórmula
+ $$\left[\bar{x}-z_{\gamma}\frac{s}{\sqrt{n}},\ \bar{x}+z_{\gamma}\frac{s}{\sqrt{n}}\right],$$
+
+ en què, si $Z$ segueix una distribució normal $(0,1)$, $P(-z_{\gamma}\leq Z\leq z_{\gamma})=\gamma$.
+
+ Per tant tenim que els extrems de l'interval són
+
+ $$\bar{x}-z_{\gamma}\frac{s}{\sqrt{n}}=90-1{,}96\frac{7}{\sqrt{175}}=88{,}9629$$
+
+ i
+
+ $$\bar{x}+z_{\gamma}\frac{s}{\sqrt{n}}=90+1{,}96\frac{7}{\sqrt{175}}=91{,}0371.$$
+
+ L'interval de confiança demanat és $[88{,}9629;\ 91{,}0371]$.
+
+ \item Amb una confiança del $99\,\%$ els extrems de l'interval seran
+
+ $$\bar{x}-z_{\gamma}\frac{s}{\sqrt{n}}=90-2{,}58\frac{7}{\sqrt{175}}=88{,}6348$$
+
+ i
+
+ $$\bar{x}+z_{\gamma}\frac{s}{\sqrt{n}}=90+2{,}58\frac{7}{\sqrt{175}}=91{,}3652.$$
+
+ L'interval de confiança demanat és $[88{,}6348;\ 91{,}3652]$.
+
+ Els dos intervals són diferents perquè els nivells de confiança són diferents. Com és natural, en el segon cas que el nivell de confiança és més gran, l'interval que obtenim és també més gran. Tenim una confiança més gran que el valor real de la mitjana estarà entre els dos valors obtinguts però l'interval és més gran.
+\end{enumerate}
+
 \end{enumerate}
